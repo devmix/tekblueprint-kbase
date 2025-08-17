@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekKnowledgeTechnology group="protocol" artifact="oauth" version="2.0">
+
+    <name>OAuth 2.0</name>
+    <tags>protocol, security, oauth</tags>
+    <website>https://oauth.net/2</website>
+    <description>
+        OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 focuses on client developer simplicity
+        while providing specific authorization flows for web applications, desktop applications, mobile phones, and
+        living room devices. This specification and its extensions are being developed within the IETF OAuth Working
+        Group.
+    </description>
+
+    <i18n lang="ru">
+        <entry path="name">OAuth 2.0 (RU)</entry>
+        <entry path="description">
+            OAuth 2.0 — это отраслевой стандартный протокол для авторизации. OAuth 2.0 фокусируется на простоте
+            разработки клиента, предоставляя при этом определенные потоки авторизации для веб-приложений, настольных
+            приложений, мобильных телефонов и
+            устройств для гостиной. Эта спецификация и ее расширения разрабатываются в рабочей группе IETF OAuth.
+        </entry>
+    </i18n>
+
+</tekKnowledgeTechnology>

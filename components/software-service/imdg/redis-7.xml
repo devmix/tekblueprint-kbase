@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="imdg" artifact="redis" version="7">
+
+    <name>Redis</name>
+    <tags>cache, in-memory, database, nosql, distributed, scalable, fast, reliable</tags>
+    <website>https://redis.io</website>
+    <metrics>cpu, mem, net, data, rps</metrics>
+    <description>
+        Redis is an open-source in-memory data structure store, used as a database, cache, and message broker.
+        It supports various data structures such as strings, hashes, lists, sets, sorted sets with range queries,
+        bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting,
+        LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability
+        via Redis Sentinel and automatic partitioning with Redis Cluster.
+    </description>
+
+    <license name="Redis Source Available License 2.0 (RSALv2)" holder="Redis Labs"
+             url="https://github.com/redis/redis/blob/unstable/LICENSE.txt"
+             commercialUse="true" type="COPYLEFT"/>
+
+    <properties/>
+
+</tekSoftwareService>

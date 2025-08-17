@@ -1,0 +1,39 @@
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekKnowledgeTechnology group="arch" artifact="restapi" version="0.1">
+
+    <name>RESTful API</name>
+    <tags>restful, api, web services, http, json</tags>
+    <website>https://restfulapi.net</website>
+    <description>
+        REST is an acronym for REpresentational State Transfer and an architectural style for distributed hypermedia systems. Roy Fielding first presented it in 2000 in his famous dissertation. Since
+        then, it has become one of the most widely used approaches for building web-based APIs (Application Programming Interfaces).
+        REST is not a protocol or a standard, it is an architectural style. During the development phase, API developers can implement REST in a variety of ways.
+        Like the other architectural styles, REST also has its guiding principles and constraints. These principles must be satisfied if a service interface is to be referred to as RESTful.
+    </description>
+
+    <i18n lang="ru">
+        <entry path="description">
+            REST — это аббревиатура от REpresentational State Transfer и архитектурный стиль для распределенных гипермедиа-систем. Рой Филдинг впервые представил его в 2000 году в своей знаменитой
+            диссертации. С тех пор он стал одним из наиболее широко используемых подходов для создания веб-API (интерфейсов прикладного программирования).
+            REST — это не протокол и не стандарт, это архитектурный стиль. На этапе разработки разработчики API могут реализовать REST различными способами.
+            Как и другие архитектурные стили, REST также имеет свои руководящие принципы и ограничения. Эти принципы должны быть соблюдены, если интерфейс службы будет называться RESTful.
+        </entry>
+    </i18n>
+
+</tekKnowledgeTechnology>

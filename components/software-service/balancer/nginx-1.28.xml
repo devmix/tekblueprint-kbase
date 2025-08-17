@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="balancer" artifact="nginx" version="1.28">
+
+    <name>nginx</name>
+    <tags>load-balancer, web-server</tags>
+    <website>https://nginx.org</website>
+    <metrics>cpu, mem, net, data, rps</metrics>
+    <description>
+        Nginx is a high-performance HTTP and reverse proxy server, as well as an IMAP/POP3 proxy server. It is known for
+        its stability, rich feature set, simple configuration, and low resource consumption.
+        Nginx is widely used for load balancing, serving static content, and as a reverse proxy to application servers.
+    </description>
+
+    <license name="BSD 2-Clause Simplified License" holder="nginx.org"
+             url="https://github.com/nginx/nginx/blob/master/LICENSE"
+             commercialUse="true" type="COPYLEFT"/>
+
+    <properties/>
+
+    <software>
+        <services>
+            <service id="main" server="main">
+                <hardware>
+                    <processor threads="2"/>
+                    <memory capacity="512MiB"/>
+                    <storage capacity="1GiB" iops="150"/>
+                    <network bandwidth="10Mbs"/>
+                </hardware>
+                <endpoints>
+                    <endpoint type="table"/>
+                </endpoints>
+            </service>
+        </services>
+    </software>
+
+    <simulation>
+        <stages>
+            <on-setup>
+                <setup-service ref="main"/>
+            </on-setup>
+
+            <on-endpoint-out>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="http">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                </endpoint>
+            </on-endpoint-out>
+
+            <on-endpoint-in>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="http">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                    <add-metric id="iops">statistics.probeBytesPerSecond / 4096</add-metric>
+                </endpoint>
+            </on-endpoint-in>
+        </stages>
+    </simulation>
+
+</tekSoftwareService>

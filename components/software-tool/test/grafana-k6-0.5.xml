@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareTool group="test" artifact="grafana-k6" version="0.5">
+
+    <name>Grafana k6</name>
+    <tags>test, performance, load testing, grafana, performance testing, web application testing, API testing</tags>
+    <website>https://k6.io</website>
+    <description>
+        Grafana k6 is a powerful open-source load testing tool that makes it easy to write and run performance tests for
+        web applications, APIs, and other systems.
+    </description>
+
+    <license name="Apache License, Version 2.0" holder="Red Hat, Inc."
+             url="https://github.com/containers/podman/blob/main/LICENSE"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+</tekSoftwareTool>

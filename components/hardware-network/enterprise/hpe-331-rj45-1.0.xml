@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekHardwareNetwork group="enterprise" artifact="hpe-331-rj45" version="1.0">
+
+    <name>HPE :: Ethernet 1Gb 4-port 331</name>
+
+    <description>
+        The HPE Ethernet 1Gb 4-port 331 is a compact and reliable network switch designed for small to medium-sized
+        businesses. It provides four RJ45 ports, each capable of handling up to 1 Gbps of bandwidth, making it ideal for
+        connecting computers, printers, and other devices in your network.
+    </description>
+
+    <variants>
+        <variant id="1" port="RJ45" bandwidth="1Gbs" model="649871-001"/>
+    </variants>
+
+</tekHardwareNetwork>

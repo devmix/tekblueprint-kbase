@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="cdc" artifact="Debezium" version="3">
+
+    <name>Debezium</name>
+    <tags>cdc, migration, synchronization</tags>
+    <website>https://debezium.io</website>
+    <metrics>cpu, mem, net, data, rps</metrics>
+    <description>
+        Debezium is an open source distributed platform for change data capture. Start it up, point it at your databases, and your apps can start responding to all of the inserts, updates, and deletes
+        that other apps commit to your databases. Debezium is durable and fast, so your apps can respond quickly and never miss an event, even when things go wrong.
+    </description>
+
+    <license name="Apache License 2.0" holder="MinIO, Inc"
+             url="https://github.com/debezium/debezium/blob/main/LICENSE.txt"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+</tekSoftwareService>

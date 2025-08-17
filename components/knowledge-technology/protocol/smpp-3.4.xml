@@ -1,0 +1,35 @@
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekKnowledgeTechnology group="protocol" artifact="smpp" version="3.4">
+
+    <name>SMPP 3.4</name>
+    <tags>sms, smpp, protocol, messaging, telecom, short message</tags>
+    <website>https://www.smpp.org</website>
+    <description>
+        Short Message Peer-to-Peer (SMPP) is a protocol for sending and receiving SMS messages between Short Message Service Centers (SMSCs) and external applications. It provides a way to send and
+        receive SMS messages programmatically, making it suitable for bulk messaging, two-way communication, and other advanced use cases.
+    </description>
+
+    <i18n lang="ru">
+        <entry path="description">
+            Short Message Peer-to-Peer (SMPP) — это протокол для отправки и получения SMS-сообщений между центрами обслуживания коротких сообщений (SMSC) и внешними приложениями. Он обеспечивает
+            программный способ отправки и получения SMS-сообщений, что делает его пригодным для массовой рассылки сообщений, двусторонней связи и других расширенных вариантов использования.
+        </entry>
+    </i18n>
+
+</tekKnowledgeTechnology>

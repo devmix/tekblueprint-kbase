@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareLanguage group="native" artifact="golang" version="1">
+
+    <name>Go</name>
+    <tags>language, native, golang, go, programming, software development, concurrent, statically typed, compiled</tags>
+    <website>https://golang.org</website>
+    <description>
+        Go is an open-source programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.
+        It is known for its simplicity, efficiency, and strong support for concurrent programming. Go's syntax is clean
+        and minimalistic, making it easy to learn and write code quickly. The language is statically typed and compiled,
+        which ensures type safety and performance. Go has a rich standard library that supports various functionalities,
+        including networking, file handling, and more. Its garbage collector helps manage memory automatically.
+        Additionally, Go's package management system makes it straightforward to share and reuse code across projects.
+    </description>
+
+    <license name="BSD 3-Clause New or Revised License" holder="The Go Authors"
+             url="https://github.com/golang/go/blob/master/LICENSE"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+</tekSoftwareLanguage>

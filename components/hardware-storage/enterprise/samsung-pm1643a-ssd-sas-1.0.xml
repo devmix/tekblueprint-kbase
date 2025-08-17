@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekHardwareStorage group="enterprise" artifact="samsung-pm1643-ssd-sas" version="1.0">
+
+    <name>Samsung :: PM1643/PM1643a</name>
+
+    <description>
+        The Samsung PM1643/PM1643a is a high-performance, enterprise-grade SSD designed for data centers and
+        mission-critical applications. It offers exceptional read/write speeds, low latency, and high endurance, making
+        it ideal for use in servers, storage arrays, and virtualized environments.
+    </description>
+
+    <variants>
+        <variant id="1.92" type="SSD" interface="SAS" capacity="1.92Tib" iops="60K" model="MZILT1T9HBJR-00007"/>
+    </variants>
+
+</tekHardwareStorage>

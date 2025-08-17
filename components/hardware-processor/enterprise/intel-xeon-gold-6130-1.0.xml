@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekHardwareProcessor group="enterprise" artifact="intel-xeon-gold-6130" version="1.0">
+
+    <name>Intel Xeon :: Gold 6130</name>
+
+    <description>
+        The Intel Xeon Gold 6130 is a high-performance processor designed for enterprise applications, offering a
+        balance between performance and power efficiency.
+    </description>
+
+    <variants>
+        <variant id="v1" arch="x86" cores="16" threads="32" freq="2.1GHz" freqMin="2.1GHz" freqMax="3.7GHz"/>
+    </variants>
+
+</tekHardwareProcessor>

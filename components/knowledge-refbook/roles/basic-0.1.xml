@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekKnowledgeRefBook group="roles" artifact="basic" version="0.1">
+
+    <name>Roles - Basic</name>
+
+    <variant lang="en">
+        <!-- SALES & MARKETING -->
+
+        <record id="account-manager">
+            <name>Account Manager</name>
+            <group>Sales &amp; Marketing</group>
+            <description>
+                An Account Manager is responsible for managing customer relationships and ensuring satisfaction. They
+                handle sales, support, and communication to drive business growth.
+            </description>
+        </record>
+        <record id="sales-manager">
+            <name>Sales Manager</name>
+            <group>Sales &amp; Marketing</group>
+            <description>
+                A Sales Manager oversees the sales team, sets targets, and develops strategies to increase revenue. They
+                manage customer relationships and ensure that sales goals are met.
+            </description>
+        </record>
+
+        <!-- PROJECT MANAGEMENT -->
+
+        <record id="stakeholder">
+            <name>Stakeholder</name>
+            <description>
+                A Stakeholder is any individual or organization that has an interest in a project. They provide
+                requirements, feedback, and approval for the project.
+            </description>
+        </record>
+        <record id="investor">
+            <name>Investor</name>
+            <description>
+                An Investor provides financial support to a project or organization. They may have a say in strategic
+                decisions and expect returns on their investment.
+            </description>
+        </record>
+        <record id="product-owner">
+            <name>Product Owner</name>
+            <description>
+                A Product Owner represents the voice of the customer in a development team. They are responsible for
+                defining product vision, managing the product backlog, and ensuring that the developed product meets
+                customer needs and business goals.
+            </description>
+        </record>
+        <record id="project-manager">
+            <name>Project Manager</name>
+            <description>
+                A Project Manager is responsible for planning, executing, and closing projects. They manage resources,
+                ensure timelines are met, and communicate effectively with stakeholders to deliver successful outcomes.
+            </description>
+        </record>
+        <record id="scrum-master">
+            <name>Scrum Master</name>
+            <description>
+                A Scrum Master facilitates the Agile development process by ensuring that teams follow Scrum principles
+                and practices. They remove obstacles, promote collaboration, and help the team achieve its goals.
+            </description>
+        </record>
+        <record id="program-manager">
+            <name>Program Manager</name>
+            <description>
+                A Program Manager is responsible for managing multiple projects or a large-scale program. They
+                coordinate resources across different teams, ensure alignment with business goals, and manage risks to
+                deliver successful outcomes.
+            </description>
+        </record>
+        <record id="release-manager">
+            <name>Release Manager</name>
+            <description>
+                A Release Manager is responsible for planning, coordinating, and executing software releases. They
+                ensure that the release process is smooth, timely, and meets quality standards while communicating with
+                stakeholders.
+            </description>
+        </record>
+
+        <!-- ARCHITECTS -->
+
+        <record id="solution-architect">
+            <name>Solution Architect</name>
+            <description>
+                A Solution Architect is responsible for designing and overseeing the implementation of complex IT
+                solutions that meet business requirements. They work closely with stakeholders to understand needs,
+                design scalable architectures, and ensure successful deployment.
+            </description>
+        </record>
+        <record id="system-architect">
+            <name>System Architect</name>
+            <description>
+                A System Architect designs and oversees the implementation of IT systems that meet business needs.
+                They ensure scalability, security, and performance while working closely with stakeholders to understand
+                requirements.
+            </description>
+        </record>
+        <record id="enterprise-architect">
+            <name>Enterprise Architect</name>
+            <description>
+                An Enterprise Architect is responsible for designing and implementing IT strategies that align with
+                business goals. They work across the organization to ensure consistency, scalability, and integration of
+                systems.
+            </description>
+        </record>
+
+        <!-- ANALYSTS -->
+
+        <record id="business-analyst">
+            <name>Business Analyst</name>
+            <description>
+                A Business Analyst acts as a bridge between business stakeholders and IT teams. They gather
+                requirements, analyze processes, and document solutions to improve business efficiency and
+                effectiveness.
+            </description>
+        </record>
+        <record id="system-analyst">
+            <name>System Analyst</name>
+            <description>
+                A System Analyst analyzes existing systems and processes to identify areas for improvement. They gather
+                requirements, document solutions, and work with developers to implement changes that enhance system
+                performance and user experience.
+            </description>
+        </record>
+        <record id="data-analyst">
+            <name>Data Analyst</name>
+            <description>
+                A Data Analyst collects, processes, and performs statistical analysis on large sets of data. They help
+                organizations make informed decisions by identifying trends and insights.
+            </description>
+        </record>
+
+        <!-- SAFe Framework Roles -->
+
+        <record id="safe-solution-manager">
+            <name>Solution Manager</name>
+            <description>
+                Solution Management is the function responsible for defining desirable, viable, feasible, and
+                sustainable large solutions that meet customer needs and for supporting development across the solution
+                life cycle.
+            </description>
+        </record>
+        <record id="safe-ste">
+            <name>Solutions Engineer (STE)</name>
+            <description>
+                The Solution Train Engineer (STE) is a servant leader and coach who facilitates Solution Train events
+                and processes, coordinates the work of ARTs and Suppliers, and supports ARTs in delivering value.
+            </description>
+        </record>
+        <record id="safe-rte">
+            <name>Release Train Engineer (RTE)</name>
+            <description>
+                The Release Train Engineer (RTE) is a servant leader and ART coach who facilitates ART events and
+                processes, and supports teams in delivering value.
+            </description>
+        </record>
+
+        <!-- DEVELOPERS -->
+
+        <record id="technical-lead">
+            <name>Technical Lead</name>
+            <description>
+                A Technical Lead is responsible for guiding a team of developers. They provide technical direction,
+                manage project timelines, and ensure that projects meet quality standards.
+            </description>
+        </record>
+        <record id="team-lead">
+            <name>Team Lead</name>
+            <description>
+                A Team Lead manages a team of software developers, ensuring that they are productive and working
+                towards common goals. They also handle communication between the development team and other
+                stakeholders.
+            </description>
+        </record>
+        <record id="backend-developer">
+            <name>Back-end Developer</name>
+            <description>
+                A Back-end Developer is responsible for the server-side logic of a web application. They write code
+                that handles data storage, retrieval, and manipulation, ensuring that the back-end functions smoothly.
+            </description>
+        </record>
+        <record id="frontend-developer">
+            <name>Front-end Developer</name>
+            <description>
+                A Front-end Developer is responsible for creating the user interface of a web application. They use
+                technologies like HTML, CSS, and JavaScript to build interactive and responsive designs.
+            </description>
+        </record>
+        <record id="fullstack-developer">
+            <name>Full-stack Developer</name>
+            <description>
+                A Full-stack Developer is proficient in both front-end and back-end development. They can handle the
+                entire web application lifecycle, from design to deployment.
+            </description>
+        </record>
+
+        <!-- QUALITY ASSURANCE -->
+
+        <record id="qa-engineer">
+            <name>Quality Assurance Engineer</name>
+            <description>
+                A Quality Assurance Engineer ensures that software products meet quality standards before release. They
+                design and execute test plans, identify bugs, and work with developers to resolve issues.
+            </description>
+        </record>
+        <record id="qa-automation">
+            <name>QA Automation Engineer</name>
+            <description>
+                A QA Automation Engineer focuses on automating the testing process to improve efficiency and coverage.
+                They write scripts and tools that can automatically test software applications.
+            </description>
+        </record>
+        <record id="qa-manager">
+            <name>QA Manager</name>
+            <description>
+                A QA Manager oversees the quality assurance team. They set standards, manage resources, and ensure that
+                all testing activities are aligned with project goals.
+            </description>
+        </record>
+        <record id="qa-tester">
+            <name>QA Tester</name>
+            <description>
+                A QA Tester manually tests software applications to identify and report bugs. They follow test plans and
+                document their findings.
+            </description>
+        </record>
+
+        <!-- DEVOPS -->
+
+        <record id="devops">
+            <name>DevOps Engineer</name>
+            <description>
+                A DevOps Engineer bridges the gap between development and operations. They automate processes, manage
+                infrastructure, and ensure smooth deployment of applications.
+            </description>
+        </record>
+        <record id="sre">
+            <name>Site Reliability Engineer</name>
+            <description>
+                An SRE focuses on maintaining the reliability of production systems. They work to ensure that services
+                are available, performant, and scalable.
+            </description>
+        </record>
+        <record id="cloud-engineer">
+            <name>Cloud Engineer</name>
+            <description>
+                A Cloud Engineer specializes in designing, building, and maintaining cloud-based infrastructure. They
+                work with various cloud platforms to deploy applications and manage resources efficiently.
+            </description>
+        </record>
+        <record id="automation-engineer">
+            <name>Automation Engineer</name>
+            <description>
+                An Automation Engineer focuses on automating repetitive tasks to improve efficiency and reduce errors.
+                They develop scripts, tools, and processes for automation in various stages of the software development
+                lifecycle.
+            </description>
+        </record>
+
+        <!-- DESIGN -->
+
+        <record id="ux-designer">
+            <name>User Experience Designer</name>
+            <description>
+                A User Experience Designer focuses on creating intuitive and user-friendly interfaces. They conduct
+                research, design prototypes, and iterate based on feedback to enhance the overall user experience.
+            </description>
+        </record>
+        <record id="ui-designer">
+            <name>User Interface Designer</name>
+            <description>
+                A User Interface Designer creates the visual elements of an application or website. They focus on
+                aesthetics, usability, and consistency to ensure a seamless user experience.
+            </description>
+        </record>
+        <record id="graphic-designer">
+            <name>Graphic Designer</name>
+            <description>
+                A Graphic Designer creates visual content for various media, including print and digital. They use
+                design software to produce graphics that communicate a message or enhance the aesthetic appeal of a
+                product.
+            </description>
+        </record>
+        <record id="interaction-designer">
+            <name>Interaction Designer</name>
+            <description>
+                An Interaction Designer focuses on the behavior of interactive systems. They design interactions
+                between users and products to ensure they are effective, efficient, and enjoyable.
+            </description>
+        </record>
+        <record id="ux-researcher">
+            <name>User Experience Researcher</name>
+            <description>
+                A User Experience Researcher studies user needs, behaviors, and preferences to inform the design of
+                products. They conduct research through methods such as surveys, interviews, and usability testing.
+            </description>
+        </record>
+    </variant>
+
+    <variant lang="ru">
+        <!-- SALES & MARKETING -->
+
+        <record id="account-manager">
+            <name>Менеджер по работе с клиентами</name>
+            <group>Sales &amp; Marketing</group>
+            <description>
+                An Account Manager is responsible for managing customer relationships and ensuring satisfaction. They
+                handle sales, support, and communication to drive business growth.
+            </description>
+        </record>
+        <record id="sales-manager">
+            <name>Менеджер по продажам</name>
+            <group>Sales &amp; Marketing</group>
+            <description>
+                A Sales Manager oversees the sales team, sets targets, and develops strategies to increase revenue. They
+                manage customer relationships and ensure that sales goals are met.
+            </description>
+        </record>
+
+        <!-- PROJECT MANAGEMENT -->
+
+        <record id="stakeholder">
+            <name>Stakeholder</name>
+            <description>
+                A Stakeholder is any individual or organization that has an interest in a project. They provide
+                requirements, feedback, and approval for the project.
+            </description>
+        </record>
+        <record id="investor">
+            <name>Инвестор</name>
+            <description>
+                An Investor provides financial support to a project or organization. They may have a say in strategic
+                decisions and expect returns on their investment.
+            </description>
+        </record>
+        <record id="product-owner">
+            <name>Product Owner</name>
+            <description>
+                A Product Owner represents the voice of the customer in a development team. They are responsible for
+                defining product vision, managing the product backlog, and ensuring that the developed product meets
+                customer needs and business goals.
+            </description>
+        </record>
+        <record id="project-manager">
+            <name>Project Manager</name>
+            <description>
+                A Project Manager is responsible for planning, executing, and closing projects. They manage resources,
+                ensure timelines are met, and communicate effectively with stakeholders to deliver successful outcomes.
+            </description>
+        </record>
+        <record id="scrum-master">
+            <name>Scrum Master</name>
+            <description>
+                A Scrum Master facilitates the Agile development process by ensuring that teams follow Scrum principles
+                and practices. They remove obstacles, promote collaboration, and help the team achieve its goals.
+            </description>
+        </record>
+        <record id="program-manager">
+            <name>Program Manager</name>
+            <description>
+                A Program Manager is responsible for managing multiple projects or a large-scale program. They
+                coordinate resources across different teams, ensure alignment with business goals, and manage risks to
+                deliver successful outcomes.
+            </description>
+        </record>
+        <record id="release-manager">
+            <name>Release Manager</name>
+            <description>
+                A Release Manager is responsible for planning, coordinating, and executing software releases. They
+                ensure that the release process is smooth, timely, and meets quality standards while communicating with
+                stakeholders.
+            </description>
+        </record>
+
+        <!-- ARCHITECTS -->
+
+        <record id="solution-architect">
+            <name>Архитектор решений</name>
+            <description>
+                A Solution Architect is responsible for designing and overseeing the implementation of complex IT
+                solutions that meet business requirements. They work closely with stakeholders to understand needs,
+                design scalable architectures, and ensure successful deployment.
+            </description>
+        </record>
+        <record id="system-architect">
+            <name>Системный архитектор</name>
+            <description>
+                A System Architect designs and oversees the implementation of IT systems that meet business needs.
+                They ensure scalability, security, and performance while working closely with stakeholders to understand
+                requirements.
+            </description>
+        </record>
+        <record id="enterprise-architect">
+            <name>Enterprise Architect</name>
+            <description>
+                An Enterprise Architect is responsible for designing and implementing IT strategies that align with
+                business goals. They work across the organization to ensure consistency, scalability, and integration of
+                systems.
+            </description>
+        </record>
+
+        <!-- ANALYSTS -->
+
+        <record id="business-analyst">
+            <name>Бизнес-аналитик</name>
+            <description>
+                A Business Analyst acts as a bridge between business stakeholders and IT teams. They gather
+                requirements, analyze processes, and document solutions to improve business efficiency and
+                effectiveness.
+            </description>
+        </record>
+        <record id="system-analyst">
+            <name>System Analyst</name>
+            <description>
+                A System Analyst analyzes existing systems and processes to identify areas for improvement. They gather
+                requirements, document solutions, and work with developers to implement changes that enhance system
+                performance and user experience.
+            </description>
+        </record>
+        <record id="data-analyst">
+            <name>Аналитик данных</name>
+            <description>
+                A Data Analyst collects, processes, and performs statistical analysis on large sets of data. They help
+                organizations make informed decisions by identifying trends and insights.
+            </description>
+        </record>
+
+        <!-- SAFe Framework Roles -->
+
+        <record id="safe-solution-manager">
+            <name>Solution Manager</name>
+            <description>
+                Solution Management is the function responsible for defining desirable, viable, feasible, and
+                sustainable large solutions that meet customer needs and for supporting development across the solution
+                life cycle.
+            </description>
+        </record>
+        <record id="safe-ste">
+            <name>Solutions Engineer (STE)</name>
+            <description>
+                The Solution Train Engineer (STE) is a servant leader and coach who facilitates Solution Train events
+                and processes, coordinates the work of ARTs and Suppliers, and supports ARTs in delivering value.
+            </description>
+        </record>
+        <record id="safe-rte">
+            <name>Release Train Engineer (RTE)</name>
+            <description>
+                The Release Train Engineer (RTE) is a servant leader and ART coach who facilitates ART events and
+                processes, and supports teams in delivering value.
+            </description>
+        </record>
+
+        <!-- DEVELOPERS -->
+
+        <record id="technical-lead">
+            <name>Technical Lead</name>
+            <description>
+                A Technical Lead is responsible for guiding a team of developers. They provide technical direction,
+                manage project timelines, and ensure that projects meet quality standards.
+            </description>
+        </record>
+        <record id="team-lead">
+            <name>Team Lead</name>
+            <description>
+                A Team Lead manages a team of software developers, ensuring that they are productive and working
+                towards common goals. They also handle communication between the development team and other
+                stakeholders.
+            </description>
+        </record>
+        <record id="backend-developer">
+            <name>Back-end Developer</name>
+            <description>
+                A Back-end Developer is responsible for the server-side logic of a web application. They write code
+                that handles data storage, retrieval, and manipulation, ensuring that the back-end functions smoothly.
+            </description>
+        </record>
+        <record id="frontend-developer">
+            <name>Front-end Developer</name>
+            <description>
+                A Front-end Developer is responsible for creating the user interface of a web application. They use
+                technologies like HTML, CSS, and JavaScript to build interactive and responsive designs.
+            </description>
+        </record>
+        <record id="fullstack-developer">
+            <name>Full-stack Developer</name>
+            <description>
+                A Full-stack Developer is proficient in both front-end and back-end development. They can handle the
+                entire web application lifecycle, from design to deployment.
+            </description>
+        </record>
+
+        <!-- QUALITY ASSURANCE -->
+
+        <record id="qa-engineer">
+            <name>QA Engineer</name>
+            <description>
+                A Quality Assurance Engineer ensures that software products meet quality standards before release. They
+                design and execute test plans, identify bugs, and work with developers to resolve issues.
+            </description>
+        </record>
+        <record id="qa-automation">
+            <name>QA Automation Engineer</name>
+            <description>
+                A QA Automation Engineer focuses on automating the testing process to improve efficiency and coverage.
+                They write scripts and tools that can automatically test software applications.
+            </description>
+        </record>
+        <record id="qa-manager">
+            <name>QA Manager</name>
+            <description>
+                A QA Manager oversees the quality assurance team. They set standards, manage resources, and ensure that
+                all testing activities are aligned with project goals.
+            </description>
+        </record>
+        <record id="qa-tester">
+            <name>QA Tester</name>
+            <description>
+                A QA Tester manually tests software applications to identify and report bugs. They follow test plans and
+                document their findings.
+            </description>
+        </record>
+
+        <!-- DEVOPS -->
+
+        <record id="devops">
+            <name>DevOps Engineer</name>
+            <description>
+                A DevOps Engineer bridges the gap between development and operations. They automate processes, manage
+                infrastructure, and ensure smooth deployment of applications.
+            </description>
+        </record>
+        <record id="sre">
+            <name>Site Reliability Engineer</name>
+            <description>
+                An SRE focuses on maintaining the reliability of production systems. They work to ensure that services
+                are available, performant, and scalable.
+            </description>
+        </record>
+        <record id="cloud-engineer">
+            <name>Cloud Engineer</name>
+            <description>
+                A Cloud Engineer specializes in designing, building, and maintaining cloud-based infrastructure. They
+                work with various cloud platforms to deploy applications and manage resources efficiently.
+            </description>
+        </record>
+        <record id="automation-engineer">
+            <name>Automation Engineer</name>
+            <description>
+                An Automation Engineer focuses on automating repetitive tasks to improve efficiency and reduce errors.
+                They develop scripts, tools, and processes for automation in various stages of the software development
+                lifecycle.
+            </description>
+        </record>
+
+        <!-- DESIGN -->
+
+        <record id="ux-designer">
+            <name>User Experience Designer</name>
+            <description>
+                A User Experience Designer focuses on creating intuitive and user-friendly interfaces. They conduct
+                research, design prototypes, and iterate based on feedback to enhance the overall user experience.
+            </description>
+        </record>
+        <record id="ui-designer">
+            <name>User Interface Designer</name>
+            <description>
+                A User Interface Designer creates the visual elements of an application or website. They focus on
+                aesthetics, usability, and consistency to ensure a seamless user experience.
+            </description>
+        </record>
+        <record id="graphic-designer">
+            <name>Graphic Designer</name>
+            <description>
+                A Graphic Designer creates visual content for various media, including print and digital. They use
+                design software to produce graphics that communicate a message or enhance the aesthetic appeal of a
+                product.
+            </description>
+        </record>
+        <record id="interaction-designer">
+            <name>Interaction Designer</name>
+            <description>
+                An Interaction Designer focuses on the behavior of interactive systems. They design interactions
+                between users and products to ensure they are effective, efficient, and enjoyable.
+            </description>
+        </record>
+        <record id="ux-researcher">
+            <name>User Experience Researcher</name>
+            <description>
+                A User Experience Researcher studies user needs, behaviors, and preferences to inform the design of
+                products. They conduct research through methods such as surveys, interviews, and usability testing.
+            </description>
+        </record>
+    </variant>
+
+</tekKnowledgeRefBook>

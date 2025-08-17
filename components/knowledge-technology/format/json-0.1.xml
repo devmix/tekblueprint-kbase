@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekKnowledgeTechnology group="format" artifact="json" version="0.1">
+
+    <name>JSON</name>
+    <tags>format, json, data interchange, serialization</tags>
+    <website>https://www.json.org/</website>
+    <description>
+        JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate.
+        It is based on a collection of name/value pairs. An object begins with { (left brace) and ends with } (right brace). Each name is followed by : (colon) and the name/value pairs are separated
+        by , (comma).
+    </description>
+
+    <i18n lang="ru">
+        <entry path="description">
+            JSON (JavaScript Object Notation) — это легкий формат обмена данными, который легко читать и писать людям, а также легко анализировать и генерировать машинам.
+            Он основан на наборе пар имя/значение. Объект начинается с { (левая фигурная скобка) и заканчивается } (правая фигурная скобка). За каждым именем следует : (двоеточие), а пары имя/значение
+            разделяются , (запятой).
+        </entry>
+    </i18n>
+
+</tekKnowledgeTechnology>

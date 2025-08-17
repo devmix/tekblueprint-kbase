@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekHardwareMemory group="enterprise" artifact="kingston-server-premier-dd4-2666" version="1.0">
+
+    <name>Kingston :: Server Premier Memory</name>
+
+    <description>
+        Kingston Server Premier DDR4 2666MHz RDIMM memory modules for enterprise servers. These modules are
+        designed to provide high performance and reliability in demanding server environments. They support ECC
+        (Error-Correcting Code) technology, which helps ensure data integrity by detecting and correcting errors in
+        real-time. The modules come in various capacities and are compatible with a wide range of server platforms.
+    </description>
+
+    <variants>
+        <variant id="8" type="DDR4" capacity="8GiB" rate="2666MHz" model="KSM26RS8/8HDI"/>
+        <variant id="16" type="DDR4" capacity="16GiB" rate="2666MHz" model="KSM26RS4/16HDI"/>
+        <variant id="32" type="DDR4" capacity="32GiB" rate="2666MHz" model="KSM26RD4/32HDI"/>
+    </variants>
+
+</tekHardwareMemory>

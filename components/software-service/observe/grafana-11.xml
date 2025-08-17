@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="observe" artifact="grafana" version="11">
+
+    <name>Grafana</name>
+    <tags>monitoring, visualization, analytics, dashboard, time-series</tags>
+    <website>https://grafana.com</website>
+    <metrics>cpu, mem, net, data, rps</metrics>
+    <description>
+        Grafana is an open-source platform for monitoring and observability. It allows you to query, visualize, alert
+        on, and understand your metrics no matter where they are stored. Create, explore, and share dashboards with your
+        team, and easily configure alert notifications for any metric or log.
+    </description>
+
+    <license name="GNU Affero General Public License v3.0" holder="Grafana Labs Inc."
+             url="https://github.com/grafana/grafana/blob/main/LICENSE"
+             commercialUse="true" type="COPYLEFT"/>
+
+    <properties/>
+
+</tekSoftwareService>

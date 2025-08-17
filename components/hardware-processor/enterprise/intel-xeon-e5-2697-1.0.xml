@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekHardwareProcessor group="enterprise" artifact="intel-xeon-e5-2697" version="1.0">
+
+    <name>Intel Xeon :: E5 2697</name>
+
+    <description>
+        The Intel Xeon E5-2697 is a high-performance server processor designed for enterprise applications.
+        It features advanced power management and thermal design capabilities, making it suitable for data centers
+        and other demanding environments.
+    </description>
+
+    <variants>
+        <variant id="v2" arch="x86" cores="12" threads="24" freq="2.7GHz" freqMin="2.2 GHz" freqMax="3.5GHz"/>
+        <variant id="v3" arch="x86" cores="14" threads="28" freq="2.6 GHz" freqMin="2.6 GHz" freqMax="3.6GHz"/>
+    </variants>
+
+</tekHardwareProcessor>

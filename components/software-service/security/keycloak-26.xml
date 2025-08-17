@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="security" artifact="keycloak" version="26">
+
+    <name>Keycloak</name>
+    <tags>security, authentication, authorization, identity management, openid-connect, oauth2</tags>
+    <website>https://www.keycloak.org</website>
+    <metrics>cpu, mem, net, data, rps</metrics>
+    <description>
+        Keycloak is an open source identity and access management solution aimed at modern applications and services.
+        It makes it easy to secure applications and services with little to no code.
+    </description>
+
+    <license name="Apache License 2.0" holder="Keycloak"
+             url="https://github.com/keycloak/keycloak/blob/main/LICENSE.txt"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+</tekSoftwareService>

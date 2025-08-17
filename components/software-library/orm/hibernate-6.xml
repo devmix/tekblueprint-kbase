@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareLibrary group="orm" artifact="hibernate" version="6">
+
+    <name>Hibernate</name>
+    <tags>orm, database, persistence, java, jpa</tags>
+    <website>https://hibernate.org/orm</website>
+    <description>
+        Hibernate is an object-relational mapping (ORM) framework for Java that provides a powerful, high-performance
+        solution to map Java classes to database tables and vice versa.
+    </description>
+
+    <license name="Apache License 2.0" holder="Hibernate Project"
+             url="https://github.com/hibernate/hibernate-orm/blob/main/LICENSE.txt"
+             commercialUse="true" type="PERMISSIVE"/>
+
+</tekSoftwareLibrary>

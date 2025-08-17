@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="coordination" artifact="apache-zookeeper" version="3.8">
+
+    <name>Apache Zookeeper</name>
+    <tags>coordination, configuration, distributed-systems, high-availability</tags>
+    <website>https://zookeeper.apache.org</website>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
+    <description>
+        Apache ZooKeeper is an open-source distributed coordination service designed to help maintain configuration
+        information, naming, providing distributed synchronization, and group services. It ensures reliable
+        communication among distributed applications, providing a simple programming interface so developers can focus
+        on their application logic. The service maintains a replicated file system-like data structure that stores small
+        amounts of data (up to 1 MB) which is used for coordination. ZooKeeper allows clients to read or write these
+        data nodes, and it supports various features like watches, atomic updates, and ordered delivery.
+    </description>
+
+    <license name="Apache License, Version 2.0" holder="Apache Software Foundation"
+             url="https://www.apache.org/licenses/LICENSE-2.0"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <software>
+        <services>
+            <service id="main" server="main" name="Apache Zookeeper">
+                <hardware>
+                    <processor threads ="1"/>
+                    <memory capacity="512MiB"/>
+                    <storage capacity="1GiB" iops="150"/>
+                    <network bandwidth="1Mbs"/>
+                </hardware>
+                <endpoints>
+                    <endpoint type="sync" name="sync state">
+                        <cpu in="1ms" out="1ms"/>
+                        <mem in="100b" out="50b"/>
+                    </endpoint>
+                </endpoints>
+            </service>
+        </services>
+    </software>
+
+    <simulation>
+        <stages>
+            <on-setup>
+                <setup-service ref="main"/>
+            </on-setup>
+
+            <on-endpoint-out>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="sync">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                </endpoint>
+            </on-endpoint-out>
+
+            <on-endpoint-in>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="sync">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                    <add-metric id="iops">statistics.probeBytesPerSecond / 4096</add-metric>
+                </endpoint>
+            </on-endpoint-in>
+        </stages>
+    </simulation>
+
+</tekSoftwareService>

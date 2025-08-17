@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="cicd" artifact="jenkins" version="2">
+
+    <name>Jenkins</name>
+    <tags>continuous-delivery, ci/cd, automation, build-server</tags>
+    <website>https://www.jenkins.io</website>
+    <metrics>cpu, mem, net</metrics>
+    <description>
+        Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration, and
+        continuous delivery. It is a server-based system that runs in servlet containers such as Apache Tomcat, or by default as a stand-alone web-application in co-bundled Eclipse Jetty. It supports
+        version control tools, including AccuRev, CVS, Subversion, Git, Mercurial, Perforce, ClearCase, and RTC, and can execute Apache Ant, Apache Maven, and sbt based projects as well as arbitrary
+        shell scripts and Windows batch commands.
+    </description>
+
+    <license name="Apache License 2.0" holder="Apache Software Foundation"
+             url="https://github.com/opensearch-project/OpenSearch/blob/main/LICENSE.txt"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+</tekSoftwareService>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekWorkforceCalendar group="russia" artifact="fulltime" version="2025+">
+
+    <name>Fulltime calendar for Russia (2025)</name>
+    <tags>workforce, calendar</tags>
+    <website>https://tekblueprint.org</website>
+    <description>
+        Fulltime calendar for Russia with standard 8h workday and standard weekends and standard holidays for 2025.
+        This calendar is used by default for all workforce resources in Russia.
+        It is based on the official Russian government calendar for 2025.
+    </description>
+
+    <variant id="40h" name="Default calendar" from="8h" length="8h" weekends="sunday,saturday">
+        <holiday date="2024-12-31" length="8">
+            <t>New Year holiday</t>
+        </holiday>
+        <override date="2024-12-30" length="7"/>
+        <holiday date="2025-05-01" length="2"/>
+        <holiday date="2025-05-08" length="2"/>
+        <override date="2025-06-11" length="7"/>
+        <holiday date="2025-06-12" length="2"/>
+        <override date="2025-11-01" length="7"/>
+        <holiday date="2025-11-03" length="2"/>
+        <holiday date="2025-12-31" length="10"/>
+    </variant>
+
+</tekWorkforceCalendar>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="observe" artifact="jaeger" version="2">
+
+    <name>Jaeger</name>
+    <tags>tracing, observability, distributed tracing, opentracing</tags>
+    <website>https://www.jaegertracing.io</website>
+    <metrics>cpu, mem, net, data, rps</metrics>
+    <description>
+       Jaeger is an open-source end-to-end distributed tracing system. It helps monitor and troubleshoot microservices-based
+        systems by providing a way to visualize the flow of requests through the system.
+    </description>
+
+    <license name="Apache License 2.0" holder="Uber Technologies, Inc."
+             url="https://github.com/jaegertracing/jaeger/blob/main/LICENSE"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+</tekSoftwareService>

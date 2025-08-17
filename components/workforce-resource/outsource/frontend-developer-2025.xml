@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekWorkforceResource group="outsource" artifact="frontend-developer" version="2025">
+
+    <name>Outsource / Front-end Developer (2025)</name>
+    <tags>workforce, resources, outsource</tags>
+    <website>https://tekblueprint.org</website>
+    <description>
+        This component defines the cost structure for an outsourced Front-end Developer role.
+    </description>
+
+    <variant id="usd" name="Front-end Developer">
+        <grade id="regular" value="100" currency="USD" name="Regular"/>
+        <grade id="senior" value="170" currency="USD" name="Senior"/>
+    </variant>
+
+</tekWorkforceResource>

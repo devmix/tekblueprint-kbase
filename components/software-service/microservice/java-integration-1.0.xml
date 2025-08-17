@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="microservice" artifact="java-integration" version="1.0">
+
+    <name>Java Microservice for Integration</name>
+    <tags>microservice, integration, java, RESTful, API</tags>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
+    <description>
+        The Java Microservice for Integration is a scalable and maintainable solution designed to facilitate seamless
+        communication between different systems through the use of RESTful APIs.
+    </description>
+
+    <license name="tekBlueprint License" holder="tekBlueprint"
+             url="https://www.tekblueprint.org/about/licence"
+             commercialUse="true" type="COPYLEFT"/>
+
+
+    <properties/>
+
+    <software>
+        <services>
+            <service id="main" server="main">
+                <endpoints>
+                    <endpoint type="http">
+                        <!--                        <cpu in="10ms" out="5ms"/>-->
+                        <!--                        <mem in="128KiB" out="128KiB"/>-->
+                        <!--                        <data limitBySize="1 TiB"/>-->
+                        <!--                        <replicate type="master-master">-->
+                        <!--                            <overhead>-->
+                        <!--                                <data in="100b" out="100b"/>-->
+                        <!--                                <cpu in="10ms" out="5ms"/>-->
+                        <!--                                <mem in="128KiB" out="128KiB"/>-->
+                        <!--                            </overhead>-->
+                        <!--                        </replicate>-->
+                    </endpoint>
+                </endpoints>
+            </service>
+        </services>
+    </software>
+
+    <simulation>
+        <stages>
+            <on-setup>
+                <setup-service ref="main"/>
+            </on-setup>
+
+            <on-endpoint-out>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="http">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                </endpoint>
+            </on-endpoint-out>
+
+            <on-endpoint-in>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="http">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                    <add-metric id="iops">statistics.probeBytesPerSecond / 4096</add-metric>
+                </endpoint>
+            </on-endpoint-in>
+        </stages>
+    </simulation>
+
+</tekSoftwareService>

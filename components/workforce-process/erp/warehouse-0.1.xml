@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekWorkforceProcess group="erp" artifact="warehouse" version="0.1">
+
+    <name>ERP: Warehouse</name>
+    <tags>workforce, process, erp</tags>
+    <website>https://tekblueprint.org</website>
+    <description>
+        Workflow process for implementing a warehouse management system in ERP environment.
+    </description>
+
+    <variant id="default">
+        <parallel>
+            <resource rid="project-manager" effort="effort * 0.15"/>
+            <sequential>
+                <resource rid="business-analyst" effort="effort * 0.15"/>
+                <parallel>
+                    <resource rid="system-architect" effort="effort * 0.2"/>
+                    <resource rid="ui-designer" effort="effort * 0.15"/>
+                </parallel>
+                <parallel>
+                    <resource rid="backend-developer" effort="effort * 0.6"/>
+                    <resource rid="frontend-developer" effort="effort * 0.4"/>
+                    <resource rid="devops-engineer" effort="effort * 0.1"/>
+                </parallel>
+                <resource rid="qa-engineer" effort="effort * 0.2"/>
+            </sequential>
+        </parallel>
+    </variant>
+
+    <variant id="pre-project">
+        <parallel>
+            <resource rid="project-manager" effort="effort * 0.15"/>
+            <sequential>
+                <resource rid="business-analyst" effort="effort * 0.3"/>
+                <parallel>
+                    <resource rid="system-architect" effort="effort * 0.4"/>
+                    <resource rid="ui-designer" effort="effort * 0.3"/>
+                </parallel>
+                <resource rid="devops-engineer" effort="effort * 0.2"/>
+                <resource rid="qa-engineer" effort="effort * 0.2"/>
+            </sequential>
+        </parallel>
+    </variant>
+
+    <variant id="development">
+        <parallel>
+            <resource rid="project-manager" effort="effort * 0.15"/>
+            <sequential>
+                <resource rid="business-analyst" effort="effort * 0.15"/>
+                <parallel>
+                    <resource rid="system-architect" effort="effort * 0.1"/>
+                    <resource rid="ui-designer" effort="effort * 0.1"/>
+                </parallel>
+                <parallel>
+                    <resource rid="backend-developer" effort="effort * 0.6"/>
+                    <resource rid="frontend-developer" effort="effort * 0.4"/>
+                    <resource rid="devops-engineer" effort="effort * 0.1"/>
+                </parallel>
+                <resource rid="qa-engineer" effort="effort * 0.2"/>
+            </sequential>
+        </parallel>
+    </variant>
+
+    <variant id="implementation">
+        <parallel>
+            <resource rid="project-manager" effort="effort * 0.2"/>
+            <sequential>
+                <resource rid="business-analyst" effort="effort * 0.2"/>
+                <parallel>
+                    <resource rid="system-architect" effort="effort * 0.1"/>
+                    <resource rid="ui-designer" effort="effort * 0.1"/>
+                </parallel>
+                <resource rid="devops-engineer" effort="effort * 0.2"/>
+                <resource rid="qa-engineer" effort="effort * 0.2"/>
+            </sequential>
+        </parallel>
+    </variant>
+
+    <variant id="maintenance">
+        <parallel>
+            <resource rid="project-manager" effort="effort * 0.2"/>
+            <sequential>
+                <resource rid="business-analyst" effort="effort * 0.1"/>
+                <parallel>
+                    <resource rid="system-architect" effort="effort * 0.05"/>
+                    <resource rid="ui-designer" effort="effort * 0.05"/>
+                </parallel>
+                <parallel>
+                    <resource rid="backend-developer" effort="effort * 0.15"/>
+                    <resource rid="frontend-developer" effort="effort * 0.15"/>
+                    <resource rid="devops-engineer" effort="effort * 0.15"/>
+                </parallel>
+                <resource rid="qa-engineer" effort="effort * 0.15"/>
+            </sequential>
+        </parallel>
+    </variant>
+
+</tekWorkforceProcess>

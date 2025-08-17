@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareTool group="orchestrator" artifact="k8s-hpa" version="1">
+
+    <name>Kubernetes: Horizontal Pod Autoscaling</name>
+    <tags>kubernetes, scaling</tags>
+    <website>https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale</website>
+    <description>
+        Kubernetes Horizontal Pod Autoscaler automatically adjusts the number of pod replicas in a deployment, replica set, stateful set, or replicaset to match the observed CPU utilization (or other
+        select metrics) of the pods. It ensures that your application can handle varying loads by scaling up when demand increases and scaling down when demand decreases.
+    </description>
+
+    <license name="Apache License 2.0" holder="CNCF"
+             url="https://github.com/kubernetes/kubernetes/blob/master/LICENSE"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+</tekSoftwareTool>

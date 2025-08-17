@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekKnowledgeRefBook group="technologies" artifact="basic" version="0.1">
+
+    <name>Technologies</name>
+
+    <variant lang="en">
+        <record id="lang-java-se">
+            <name>Java SE</name>
+            <website>https://www.oracle.com/java/technologies/javase-downloads.html</website>
+            <description>
+                Java Platform, Standard Edition (Java SE) is a widely used platform for developing and deploying
+                enterprise scale applications. It provides the core set of APIs and tools needed to build robust,
+                scalable, and secure Java applications.
+            </description>
+        </record>
+        <record id="framework-spring-boot">
+            <name>Spring Boot</name>
+            <website>https://spring.io/projects/spring-boot</website>
+            <description>
+                Spring Boot is a framework that simplifies the development of new Spring applications. It provides
+                opinionated defaults to get you up and running as quickly as possible, with minimal upfront
+                configuration.
+            </description>
+        </record>
+        <record id="framework-spring-cloud-gateway">
+            <name>Spring Cloud Gateway</name>
+            <website>https://spring.io/projects/spring-cloud-gateway</website>
+            <description>
+                Spring Cloud Gateway is a library for routing to APIs and providing cross-cutting concerns to them such
+                as: security, monitoring/metrics, and resiliency.
+            </description>
+        </record>
+        <record id="framework-react">
+            <name>React UI</name>
+            <website>https://reactjs.org</website>
+            <description>
+                React is a JavaScript library for building user interfaces. It allows developers to create large web
+                applications that can change data, without reloading the page.
+            </description>
+        </record>
+        <record id="container-docker">
+            <name>Docker</name>
+            <website>https://www.docker.com</website>
+            <description>
+                Docker is a platform that uses OS-level virtualization to deliver software in packages called
+                containers. Containers are isolated from one another and bundle their own software, libraries and
+                configuration files; they can communicate with each other through well-defined channels.
+            </description>
+        </record>
+        <record id="orchestrator-k8s">
+            <name>Kubernetes</name>
+            <website>https://kubernetes.io</website>
+            <description>
+                Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and
+                management of containerized applications.
+            </description>
+        </record>
+        <record id="protocol-smpp">
+            <name>SMPP</name>
+            <website>http://docs.nimta.com/smppv50.pdf</website>
+            <description>
+                Short Message Peer-to-Peer (SMPP) is an open, industry standard protocol designed to provide a flexible
+                data communications interface for the transfer of short message data between External Short
+                Message Entities (ESME), Routing Entities (RE) and Message Centres.
+            </description>
+        </record>
+    </variant>
+
+</tekKnowledgeRefBook>

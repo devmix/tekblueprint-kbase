@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareLanguage group="vm" artifact="java" version="25">
+
+    <name>Java SE/EE</name>
+    <tags>language, java, jdk, jre, java-ee</tags>
+    <website>https://www.oracle.com/java/technologies/javase-jdk25-downloads.html</website>
+    <description>
+        Java SE/EE is a comprehensive platform for developing and running enterprise-scale applications. Java 25
+        introduces several new features and optimizations that enhance performance, security, and developer
+        productivity.
+    </description>
+
+    <license name="GNU General Public License v2, with the Classpath Exception (GPLv2+CPE)" holder="Oracle"
+             url="https://openjdk.org/legal/gplv2+ce.html"
+             commercialUse="true" type="COPYLEFT"/>
+
+    <properties/>
+
+</tekSoftwareLanguage>

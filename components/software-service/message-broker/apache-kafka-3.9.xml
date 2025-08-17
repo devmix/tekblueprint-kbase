@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="message-broker" artifact="apache-kafka" version="3.9">
+
+    <name>Apache Kafka</name>
+    <tags>event log, broker, queue, distributed streaming, high-throughput, fault-tolerant</tags>
+    <website>https://kafka.apache.org</website>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
+    <description>
+        Apache Kafka is an open-source distributed event-streaming platform used to build real-time data pipelines and
+        streaming applications. It allows for the publication, subscription, and processing of streams of records in a
+        fault-tolerant way. Kafka stores streams of events in categories called topics, where each record consists of a
+        key, value, and timestamp. Producers send records to Kafka topics, while consumers read from these topics to
+        process the data. Kafka ensures that messages are replicated across multiple brokers for high availability and
+        durability.
+    </description>
+
+    <license name="Apache License, Version 2.0" holder="Apache Software Foundation"
+             url="https://www.apache.org/licenses/LICENSE-2.0"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties>
+        <property id="with-zk" type="BOOLEAN" defaultValue="false"/>
+    </properties>
+
+    <!--    if expr="with-zk" {-->
+    <!--        add-service id="zk" template="software:apache-zookeeper:1.0" cluster="3" {-->
+    <!--            endpoint id="sync" type="tcp" name="sync state"-->
+    <!--        }-->
+    <!--    }-->
+
+    <software>
+        <services>
+            <!-- DEFAULT -->
+
+            <service id="main-simple" server="main">
+                <hardware>
+                    <processor threads="1"/>
+                    <memory capacity="512MiB"/>
+                    <storage capacity="1GiB" iops="150"/>
+                    <network bandwidth="1Mbs"/>
+                </hardware>
+
+                <endpoints>
+                    <endpoint type="topic">
+                        <cpu in="10ms" out="5ms"/>
+                        <mem in="128KiB" out="128KiB"/>
+                        <data limitBySize="1 TiB"/>
+                        <replicate type="master-master">
+                            <overhead>
+                                <data in="100b" out="100b"/>
+                                <cpu in="10ms" out="5ms"/>
+                                <mem in="128KiB" out="128KiB"/>
+                            </overhead>
+                        </replicate>
+                    </endpoint>
+                </endpoints>
+            </service>
+
+            <!-- WITH ZooKeeper -->
+
+            <service id="main-with-zk" server="main">
+                <hardware>
+                    <processor threads="1"/>
+                    <memory capacity="512MiB"/>
+                    <storage capacity="1GiB" iops="150"/>
+                    <network bandwidth="1Mbs"/>
+                </hardware>
+
+                <endpoints>
+                    <endpoint type="topic">
+                        <cpu in="10ms" out="5ms"/>
+                        <mem in="128KiB" out="128KiB"/>
+                        <!--                        <data limitBySize="1 TiB"/>-->
+                        <replicate type="master-master">
+                            <overhead>
+                                <data in="100b" out="100b"/>
+                                <cpu in="10ms" out="5ms"/>
+                                <mem in="128KiB" out="128KiB"/>
+                            </overhead>
+                        </replicate>
+                    </endpoint>
+                    <endpoint id="zksync" type="zksync">
+                        <cpu in="1ms" out="1ms"/>
+                        <mem in="100b" out="50b"/>>
+                    </endpoint>
+                </endpoints>
+            </service>
+
+            <service id="zk" server="main" template="coordination:apache-zookeeper:3.8" replicas="3">
+                <endpoints>
+                    <endpoint id="sync" type="sync"/>
+                </endpoints>
+            </service>
+        </services>
+    </software>
+
+    <simulation>
+        <streams>
+            <stream id="zk-sync" from="${id}:zksync" to="${id}-zk:sync" name="Synchronize Kafka cluster">
+                <rate qty="1" per="second"/>
+                <data in="1 KiB" out="100 b"/>
+                <cpu in="10ms" out="5ms"/>
+                <mem in="128 KiB"/>
+                <latency time="1 second"/>
+            </stream>
+        </streams>
+
+        <stages>
+            <on-setup>
+                <if-not-property id="with-zk">
+                    <setup-service ref="main-simple"/>
+                </if-not-property>
+
+                <if-property id="with-zk">
+                    <setup-service ref="main-with-zk"/>
+                    <setup-service-endpoint ref="main-with-zk:zksync"/>
+                    <add-service id="${id}-zk" ref="zk"/>
+                    <add-stream ref="zk-sync"/>
+                </if-property>
+            </on-setup>
+
+            <on-endpoint-out>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="topic">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                </endpoint>
+            </on-endpoint-out>
+
+            <on-endpoint-in>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="topic">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                    <add-metric id="iops">statistics.probeBytesPerSecond / 4096</add-metric>
+                </endpoint>
+            </on-endpoint-in>
+        </stages>
+    </simulation>
+
+</tekSoftwareService>

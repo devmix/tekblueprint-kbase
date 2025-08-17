@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareService group="rdbms" artifact="postgresql" version="17.0">
+
+    <name>PostgreSQL</name>
+    <tags>rdbms, database, sql, mvcc, acid</tags>
+    <website>https://www.postgresql.org</website>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
+    <description>
+        PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language
+        combined with many features that safely store and scale the most complicated data workloads. It has more than 35
+        years of active development and a proven architecture that fully supports ACID transactions, foreign keys,
+        triggers, updatable views, and common table expressions (CTEs). PostgreSQL enhances robustness with
+        multi-version concurrency control (MVCC), point-in-time recovery, asynchronous replication, and hot standby.
+    </description>
+
+    <license name="The PostgreSQL License" holder="PostgreSQL Global Development Group"
+             url="https://www.postgresql.org/about/licence"
+             commercialUse="true" type="PERMISSIVE"/>
+
+    <properties/>
+
+    <software>
+        <services>
+            <service id="main" server="main">
+                <hardware>
+                    <processor threads ="2"/>
+                    <memory capacity="512MiB"/>
+                    <storage capacity="1GiB" iops="150"/>
+                    <network bandwidth="10Mbs"/>
+                </hardware>
+                <endpoints>
+                    <endpoint type="table"/>
+                </endpoints>
+            </service>
+        </services>
+    </software>
+
+    <simulation>
+        <stages>
+            <on-setup>
+                <setup-service ref="main"/>
+            </on-setup>
+
+            <on-endpoint-out>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="table">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                </endpoint>
+            </on-endpoint-out>
+
+            <on-endpoint-in>
+                <add-metric id="rps">statistics.probeRequestsPerSecond</add-metric>
+                <endpoint type="table">
+                    <add-metric id="net">statistics.probeBytesPerSecond</add-metric>
+                    <add-metric id="cpu">statistics.probeComputePerSecond</add-metric>
+                    <add-metric id="mem">statistics.probeMemoryPerSecond</add-metric>
+                    <add-metric id="iops">statistics.probeBytesPerSecond / 4096</add-metric>
+                    <add-metric id="data">endpoint.dataStorage.bytes</add-metric>
+                </endpoint>
+            </on-endpoint-in>
+        </stages>
+    </simulation>
+
+</tekSoftwareService>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekHardwareServer group="enterprise" artifact="hp-dl360" version="1.0">
+
+    <name>HP :: ProLiant DL360</name>
+
+    <description>
+        The HP ProLiant DL360 is a powerful and versatile server designed for enterprise-level performance. It is ideal
+        for a wide range of applications, including virtualization, web hosting, database management, and more. The
+        DL360 series offers excellent performance, reliability, and scalability, making it a popular choice among
+        businesses of all sizes.
+    </description>
+
+    <variants>
+        <variant id="gen10-8sff" arch="x86">
+            <description>
+                The HPE ProLiant DL360 Gen10 Server supports the Intel® Xeon® Scalable Processor Family with up to 28
+                cores, plus 2933 MT/s HPE DDR4 Smart Memory supporting up to 3.0 TB max. With the added performance that
+                HPE Persistent Memory and 10 NVMe bring, the HPE ProLiant DL360 Gen10 means business. Deploy this dense
+                platform for diverse workloads in space constrained environments and maintain it with ease by automating
+                the most essential server lifecycle management tasks with HPE OneView and HPE iLO 5.
+            </description>
+
+            <processor x="2" template="enterprise:intel-xeon-gold-6130:1.0"/>
+            <memory>
+                <slot x="4" template="enterprise:kingston-server-premier-dd4-2666:1.0:32"/>
+            </memory>
+            <storage>
+                <slot x="1" template="enterprise:samsung-pm1643a-ssd-sas:1.0:1.92"/>
+                <slot x="4" template="enterprise:hpe-hdd-sas:1.0:1.8"/>
+            </storage>
+            <network>
+                <slot x="1" template="enterprise:hpe-331-rj45:1.0"/>
+            </network>
+        </variant>
+    </variants>
+
+</tekHardwareServer>
