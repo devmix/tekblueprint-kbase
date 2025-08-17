@@ -57,7 +57,7 @@ Create file `workbench.xml` and add this repository:
     - `branch` -- branch of the repository.
     - `components' -- a catalog inside the repository.
 
-Then set environment variable of the docker image to this file.
+Then set environment variable of the [docker image](https://hub.docker.com/r/tekblueprint/kbase) to this file.
 
 ```yaml
 services:
