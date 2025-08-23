@@ -16,15 +16,18 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLibrary group="spring" artifact="mvc" version="3">
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="spring" artifact="mvc" version="3">
 
     <name>Spring MVC</name>
-    <tags>spring, mvc, web framework</tags>
-    <website>https://spring.io/projects/spring-framework#modules-mvc</website>
-    <description>
+    <t>
         Spring MVC is a powerful and flexible web framework that provides a comprehensive solution for building enterprise-grade web applications.
         It supports the Model-View-Controller (MVC) architectural pattern, making it easier to manage complex web applications.
-    </description>
+    </t>
+
+    <tags>spring, mvc, web framework</tags>
+    <website>https://spring.io/projects/spring-framework#modules-mvc</website>
 
     <license name="Apache License, Version 2.0" holder="Pivotal Software, Inc."
              url="https://www.apache.org/licenses/LICENSE-2.0"

@@ -16,24 +16,26 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="fs" artifact="minio" version="2024">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="fs" artifact="minio" version="2024">
 
     <name>MinIO Object Storage</name>
-    <tags>object storage, distributed, scalable, S3 compatible</tags>
-    <website>https://min.io</website>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         MinIO is a high-performance, distributed object storage system that is S3 API compatible.
         It is designed to be easy to deploy, manage, and scale. MinIO provides a simple and
         efficient way to store and retrieve large amounts of unstructured data, such as images,
         videos, and documents.
-    </description>
+    </t>
+
+    <tags>object storage, distributed, scalable, S3 compatible</tags>
+    <website>https://min.io</website>
 
     <license name="GNU Affero General Public License v3.0" holder="MinIO, Inc"
              url="https://github.com/minio/minio/blob/master/LICENSE"
              commercialUse="true" type="COPYLEFT"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
 
     <software>
         <services>
@@ -45,7 +47,7 @@
                     <network bandwidth="10Mbs"/>
                 </hardware>
                 <endpoints>
-                    <endpoint type="table"/>
+                    <endpoint id="s3" type="table"/>
                 </endpoints>
             </service>
         </services>

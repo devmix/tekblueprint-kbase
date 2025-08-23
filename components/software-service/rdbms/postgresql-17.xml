@@ -16,37 +16,39 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="rdbms" artifact="postgresql" version="17.0">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="rdbms" artifact="postgresql" version="17.0">
 
     <name>PostgreSQL</name>
-    <tags>rdbms, database, sql, mvcc, acid</tags>
-    <website>https://www.postgresql.org</website>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language
         combined with many features that safely store and scale the most complicated data workloads. It has more than 35
         years of active development and a proven architecture that fully supports ACID transactions, foreign keys,
         triggers, updatable views, and common table expressions (CTEs). PostgreSQL enhances robustness with
         multi-version concurrency control (MVCC), point-in-time recovery, asynchronous replication, and hot standby.
-    </description>
+    </t>
+
+    <tags>rdbms, database, sql, mvcc, acid</tags>
+    <website>https://www.postgresql.org</website>
 
     <license name="The PostgreSQL License" holder="PostgreSQL Global Development Group"
              url="https://www.postgresql.org/about/licence"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
 
     <software>
         <services>
             <service id="main" server="main">
                 <hardware>
-                    <processor threads ="2"/>
+                    <processor threads="2"/>
                     <memory capacity="512MiB"/>
                     <storage capacity="1GiB" iops="150"/>
                     <network bandwidth="10Mbs"/>
                 </hardware>
                 <endpoints>
-                    <endpoint type="table"/>
+                    <endpoint id="table" type="table"/>
                 </endpoints>
             </service>
         </services>

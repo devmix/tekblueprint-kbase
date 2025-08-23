@@ -16,24 +16,26 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="imdg" artifact="redis" version="7">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="imdg" artifact="redis" version="7">
 
     <name>Redis</name>
-    <tags>cache, in-memory, database, nosql, distributed, scalable, fast, reliable</tags>
-    <website>https://redis.io</website>
-    <metrics>cpu, mem, net, data, rps</metrics>
-    <description>
+    <t>
         Redis is an open-source in-memory data structure store, used as a database, cache, and message broker.
         It supports various data structures such as strings, hashes, lists, sets, sorted sets with range queries,
         bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting,
         LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability
         via Redis Sentinel and automatic partitioning with Redis Cluster.
-    </description>
+    </t>
+
+    <tags>cache, in-memory, database, nosql, distributed, scalable, fast, reliable</tags>
+    <website>https://redis.io</website>
 
     <license name="Redis Source Available License 2.0 (RSALv2)" holder="Redis Labs"
              url="https://github.com/redis/redis/blob/unstable/LICENSE.txt"
              commercialUse="true" type="COPYLEFT"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps</metrics>
 
 </tekSoftwareService>

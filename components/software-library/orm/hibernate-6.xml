@@ -16,15 +16,18 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLibrary group="orm" artifact="hibernate" version="6">
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="orm" artifact="hibernate" version="6">
 
     <name>Hibernate</name>
-    <tags>orm, database, persistence, java, jpa</tags>
-    <website>https://hibernate.org/orm</website>
-    <description>
+    <t>
         Hibernate is an object-relational mapping (ORM) framework for Java that provides a powerful, high-performance
         solution to map Java classes to database tables and vice versa.
-    </description>
+    </t>
+
+    <tags>orm, database, persistence, java, jpa</tags>
+    <website>https://hibernate.org/orm</website>
 
     <license name="Apache License 2.0" holder="Hibernate Project"
              url="https://github.com/hibernate/hibernate-orm/blob/main/LICENSE.txt"

@@ -15,17 +15,20 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekKnowledgeTechnology group="protocol" artifact="oauth" version="2.0">
+<tekKnowledgeTechnology model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                        xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                        group="protocol" artifact="oauth" version="2.0">
 
     <name>OAuth 2.0</name>
-    <tags>protocol, security, oauth</tags>
-    <website>https://oauth.net/2</website>
-    <description>
+    <t>
         OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 focuses on client developer simplicity
         while providing specific authorization flows for web applications, desktop applications, mobile phones, and
         living room devices. This specification and its extensions are being developed within the IETF OAuth Working
         Group.
-    </description>
+    </t>
+
+    <tags>protocol, security, oauth</tags>
+    <website>https://oauth.net/2</website>
 
     <i18n lang="ru">
         <entry path="name">OAuth 2.0 (RU)</entry>

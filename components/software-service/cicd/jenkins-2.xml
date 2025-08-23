@@ -16,23 +16,25 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="cicd" artifact="jenkins" version="2">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="cicd" artifact="jenkins" version="2">
 
     <name>Jenkins</name>
-    <tags>continuous-delivery, ci/cd, automation, build-server</tags>
-    <website>https://www.jenkins.io</website>
-    <metrics>cpu, mem, net</metrics>
-    <description>
+    <t>
         Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration, and
         continuous delivery. It is a server-based system that runs in servlet containers such as Apache Tomcat, or by default as a stand-alone web-application in co-bundled Eclipse Jetty. It supports
         version control tools, including AccuRev, CVS, Subversion, Git, Mercurial, Perforce, ClearCase, and RTC, and can execute Apache Ant, Apache Maven, and sbt based projects as well as arbitrary
         shell scripts and Windows batch commands.
-    </description>
+    </t>
+
+    <tags>continuous-delivery, ci/cd, automation, build-server</tags>
+    <website>https://www.jenkins.io</website>
 
     <license name="Apache License 2.0" holder="Apache Software Foundation"
              url="https://github.com/opensearch-project/OpenSearch/blob/main/LICENSE.txt"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net</metrics>
 
 </tekSoftwareService>

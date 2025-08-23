@@ -16,13 +16,14 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekHardwareStorage group="enterprise" artifact="hpe-hdd-sas" version="1.0">
+<tekHardwareStorage model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="enterprise" artifact="hpe-hdd-sas" version="1.0">
 
     <name>HPE :: SC DS Enterprise HDD</name>
-
-    <description>
+    <t>
         High Performance Enterprise Hard Disk Drive (HDD) for use in Storage Controllers.
-    </description>
+    </t>
 
     <variants>
         <variant id="1.8" type="HDD" interface="SAS" capacity="1.8Tib" iops="60K" model="872481-B21"/>

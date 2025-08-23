@@ -16,29 +16,32 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekWorkforceCalendar group="russia" artifact="fulltime" version="2025+">
+<tekWorkforceCalendar model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                      xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                      group="russia" artifact="fulltime" version="2025+">
 
     <name>Fulltime calendar for Russia (2025)</name>
-    <tags>workforce, calendar</tags>
-    <website>https://tekblueprint.org</website>
-    <description>
+    <t>
         Fulltime calendar for Russia with standard 8h workday and standard weekends and standard holidays for 2025.
         This calendar is used by default for all workforce resources in Russia.
         It is based on the official Russian government calendar for 2025.
-    </description>
+    </t>
 
-    <variant id="40h" name="Default calendar" from="8h" length="8h" weekends="sunday,saturday">
+    <tags>workforce, calendar</tags>
+    <website>https://tekblueprint.org</website>
+
+    <variant id="40h" from="8h" length="8h" weekends="sunday,saturday">
         <holiday date="2024-12-31" length="8">
             <t>New Year holiday</t>
         </holiday>
-        <override date="2024-12-30" length="7"/>
         <holiday date="2025-05-01" length="2"/>
         <holiday date="2025-05-08" length="2"/>
-        <override date="2025-06-11" length="7"/>
         <holiday date="2025-06-12" length="2"/>
-        <override date="2025-11-01" length="7"/>
         <holiday date="2025-11-03" length="2"/>
         <holiday date="2025-12-31" length="10"/>
+        <override date="2024-12-30" length="7"/>
+        <override date="2025-06-11" length="7"/>
+        <override date="2025-11-01" length="7"/>
     </variant>
 
 </tekWorkforceCalendar>

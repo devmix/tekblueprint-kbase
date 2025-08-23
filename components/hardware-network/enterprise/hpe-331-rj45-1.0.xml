@@ -16,15 +16,16 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekHardwareNetwork group="enterprise" artifact="hpe-331-rj45" version="1.0">
+<tekHardwareNetwork model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="enterprise" artifact="hpe-331-rj45" version="1.0">
 
     <name>HPE :: Ethernet 1Gb 4-port 331</name>
-
-    <description>
+    <t>
         The HPE Ethernet 1Gb 4-port 331 is a compact and reliable network switch designed for small to medium-sized
         businesses. It provides four RJ45 ports, each capable of handling up to 1 Gbps of bandwidth, making it ideal for
         connecting computers, printers, and other devices in your network.
-    </description>
+    </t>
 
     <variants>
         <variant id="1" port="RJ45" bandwidth="1Gbs" model="649871-001"/>

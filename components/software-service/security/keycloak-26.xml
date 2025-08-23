@@ -16,21 +16,23 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="security" artifact="keycloak" version="26">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="security" artifact="keycloak" version="26">
 
     <name>Keycloak</name>
-    <tags>security, authentication, authorization, identity management, openid-connect, oauth2</tags>
-    <website>https://www.keycloak.org</website>
-    <metrics>cpu, mem, net, data, rps</metrics>
-    <description>
+    <t>
         Keycloak is an open source identity and access management solution aimed at modern applications and services.
         It makes it easy to secure applications and services with little to no code.
-    </description>
+    </t>
+
+    <tags>security, authentication, authorization, identity management, openid-connect, oauth2</tags>
+    <website>https://www.keycloak.org</website>
 
     <license name="Apache License 2.0" holder="Keycloak"
              url="https://github.com/keycloak/keycloak/blob/main/LICENSE.txt"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps</metrics>
 
 </tekSoftwareService>

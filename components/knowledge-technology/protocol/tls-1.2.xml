@@ -15,15 +15,18 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekKnowledgeTechnology group="protocol" artifact="tls" version="1.2">
+<tekKnowledgeTechnology model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                        xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                        group="protocol" artifact="tls" version="1.2">
 
     <name>TLS</name>
-    <tags>protocol, security, tls</tags>
-    <website>https://www.rfc-editor.org/rfc/rfc5246.html</website>
-    <description>
+    <t>
         TLS (Transport Layer Security) is a cryptographic protocol that provides security for communications over computer networks. TLS 1.2, the version discussed here, builds on its predecessor, SSL
         3.0, and includes improvements in terms of security features and performance.
-    </description>
+    </t>
+
+    <tags>protocol, security, tls</tags>
+    <website>https://www.rfc-editor.org/rfc/rfc5246.html</website>
 
     <i18n lang="ru">
         <entry path="description">

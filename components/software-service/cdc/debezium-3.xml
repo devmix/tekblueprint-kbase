@@ -16,21 +16,23 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="cdc" artifact="Debezium" version="3">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="cdc" artifact="Debezium" version="3">
 
     <name>Debezium</name>
-    <tags>cdc, migration, synchronization</tags>
-    <website>https://debezium.io</website>
-    <metrics>cpu, mem, net, data, rps</metrics>
-    <description>
+    <t>
         Debezium is an open source distributed platform for change data capture. Start it up, point it at your databases, and your apps can start responding to all of the inserts, updates, and deletes
         that other apps commit to your databases. Debezium is durable and fast, so your apps can respond quickly and never miss an event, even when things go wrong.
-    </description>
+    </t>
+
+    <tags>cdc, migration, synchronization</tags>
+    <website>https://debezium.io</website>
 
     <license name="Apache License 2.0" holder="MinIO, Inc"
              url="https://github.com/debezium/debezium/blob/main/LICENSE.txt"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps</metrics>
 
 </tekSoftwareService>

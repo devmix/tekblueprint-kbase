@@ -16,14 +16,17 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLibrary group="streaming" artifact="pion-webrtc" version="4">
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="streaming" artifact="pion-webrtc" version="4">
 
     <name>Pion WebRTC</name>
+    <t>
+        Pion WebRTC is a pure Go implementation of the WebRTC API and supporting libraries.
+    </t>
+
     <tags>webrtc, streaming, peer-to-peer</tags>
     <website>https://github.com/pion/webrtc</website>
-    <description>
-        Pion WebRTC is a pure Go implementation of the WebRTC API and supporting libraries.
-    </description>
 
     <license name="MIT" holder=""
              url="https://github.com/pion/webrtc/blob/master/LICENSES/MIT.txt"

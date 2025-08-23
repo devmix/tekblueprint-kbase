@@ -16,23 +16,25 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="observe" artifact="prometheus" version="3">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="observe" artifact="prometheus" version="3">
 
     <name>Prometheus</name>
-    <tags>metrics, monitoring, observability, time-series, database</tags>
-    <website>https://prometheus.io</website>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         Prometheus is an open-source systems monitoring and alerting toolkit. It collects metrics from configured
         targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts if certain
         conditions are observed.
-    </description>
+    </t>
+
+    <tags>metrics, monitoring, observability, time-series, database</tags>
+    <website>https://prometheus.io</website>
 
     <license name="Apache License 2.0" holder="The Prometheus Authors"
              url="https://github.com/prometheus/prometheus/blob/main/LICENSE"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
 
     <software>
         <services>
@@ -44,7 +46,7 @@
                     <network bandwidth="10Mbs"/>
                 </hardware>
                 <endpoints>
-                    <endpoint type="table"/>
+                    <endpoint id="collector" type="collector"/>
                 </endpoints>
             </service>
         </services>

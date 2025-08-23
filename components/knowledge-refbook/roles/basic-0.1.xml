@@ -16,7 +16,9 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekKnowledgeRefBook group="roles" artifact="basic" version="0.1">
+<tekKnowledgeRefBook model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                     xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                     group="roles" artifact="basic" version="0.1">
 
     <name>Roles - Basic</name>
 

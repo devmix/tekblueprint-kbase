@@ -16,39 +16,40 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="coordination" artifact="apache-zookeeper" version="3.8">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="coordination" artifact="apache-zookeeper" version="3.8">
 
     <name>Apache Zookeeper</name>
-    <tags>coordination, configuration, distributed-systems, high-availability</tags>
-    <website>https://zookeeper.apache.org</website>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         Apache ZooKeeper is an open-source distributed coordination service designed to help maintain configuration
         information, naming, providing distributed synchronization, and group services. It ensures reliable
         communication among distributed applications, providing a simple programming interface so developers can focus
         on their application logic. The service maintains a replicated file system-like data structure that stores small
         amounts of data (up to 1 MB) which is used for coordination. ZooKeeper allows clients to read or write these
         data nodes, and it supports various features like watches, atomic updates, and ordered delivery.
-    </description>
+    </t>
+
+    <tags>coordination, configuration, distributed-systems, high-availability</tags>
+    <website>https://zookeeper.apache.org</website>
 
     <license name="Apache License, Version 2.0" holder="Apache Software Foundation"
              url="https://www.apache.org/licenses/LICENSE-2.0"
              commercialUse="true" type="PERMISSIVE"/>
 
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
+
     <software>
         <services>
             <service id="main" server="main" name="Apache Zookeeper">
                 <hardware>
-                    <processor threads ="1"/>
+                    <processor threads="1"/>
                     <memory capacity="512MiB"/>
                     <storage capacity="1GiB" iops="150"/>
                     <network bandwidth="1Mbs"/>
                 </hardware>
                 <endpoints>
-                    <endpoint type="sync" name="sync state">
-                        <cpu in="1ms" out="1ms"/>
-                        <mem in="100b" out="50b"/>
-                    </endpoint>
+                    <endpoint id="kv" type="sync" name="sync state"/>
                 </endpoints>
             </service>
         </services>

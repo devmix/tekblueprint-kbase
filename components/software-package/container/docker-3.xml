@@ -16,23 +16,24 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwarePackage group="container" artifact="docker" version="3">
+<tekSoftwarePackage model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="container" artifact="docker" version="3">
 
     <name>Docker</name>
-    <tags>container, docker, containerization, deployment, orchestration</tags>
-    <website>https://www.docker.com</website>
-    <description>
+    <t>
         Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate
         your applications from your infrastructure so you can deliver software quickly using OS-level virtualization.
         With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking
         advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly
         reduce the delay between writing code and running it in production.
-    </description>
+    </t>
+
+    <tags>container, docker, containerization, deployment, orchestration</tags>
+    <website>https://www.docker.com</website>
 
     <license name="Apache License, Version 2.0" holder="Docker, Inc."
              url="https://www.apache.org/licenses/LICENSE-2.0"
              commercialUse="true" type="PERMISSIVE"/>
-
-    <properties/>
 
 </tekSoftwarePackage>

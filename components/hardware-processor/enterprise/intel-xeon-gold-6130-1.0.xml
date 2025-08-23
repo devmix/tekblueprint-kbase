@@ -16,14 +16,15 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekHardwareProcessor group="enterprise" artifact="intel-xeon-gold-6130" version="1.0">
+<tekHardwareProcessor model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                      xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                      group="enterprise" artifact="intel-xeon-gold-6130" version="1.0">
 
     <name>Intel Xeon :: Gold 6130</name>
-
-    <description>
+    <t>
         The Intel Xeon Gold 6130 is a high-performance processor designed for enterprise applications, offering a
         balance between performance and power efficiency.
-    </description>
+    </t>
 
     <variants>
         <variant id="v1" arch="x86" cores="16" threads="32" freq="2.1GHz" freqMin="2.1GHz" freqMax="3.7GHz"/>

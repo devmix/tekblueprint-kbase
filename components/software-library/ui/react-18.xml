@@ -16,15 +16,18 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLibrary group="ui" artifact="react" version="18">
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="ui" artifact="react" version="18">
 
     <name>React</name>
-    <tags>ui, javascript, frontend</tags>
-    <website>https://reactjs.org</website>
-    <description>
+    <t>
         React is a popular JavaScript library for building user interfaces, particularly single-page applications where
         you need a fast and responsive UI.
-    </description>
+    </t>
+
+    <tags>ui, javascript, frontend</tags>
+    <website>https://reactjs.org</website>
 
     <license name="MIT" holder="Meta Platforms, Inc. and affiliates."
              url="https://github.com/facebook/react/blob/main/LICENSE"

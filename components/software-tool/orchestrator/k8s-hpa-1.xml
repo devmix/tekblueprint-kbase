@@ -16,20 +16,21 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareTool group="orchestrator" artifact="k8s-hpa" version="1">
+<tekSoftwareTool model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                 xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                 group="orchestrator" artifact="k8s-hpa" version="1">
 
     <name>Kubernetes: Horizontal Pod Autoscaling</name>
-    <tags>kubernetes, scaling</tags>
-    <website>https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale</website>
-    <description>
+    <t>
         Kubernetes Horizontal Pod Autoscaler automatically adjusts the number of pod replicas in a deployment, replica set, stateful set, or replicaset to match the observed CPU utilization (or other
         select metrics) of the pods. It ensures that your application can handle varying loads by scaling up when demand increases and scaling down when demand decreases.
-    </description>
+    </t>
+
+    <tags>kubernetes, scaling</tags>
+    <website>https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale</website>
 
     <license name="Apache License 2.0" holder="CNCF"
              url="https://github.com/kubernetes/kubernetes/blob/master/LICENSE"
              commercialUse="true" type="PERMISSIVE"/>
-
-    <properties/>
 
 </tekSoftwareTool>

@@ -16,14 +16,17 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLibrary group="protocol" artifact="jsmpp" version="3.0">
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="protocol" artifact="jsmpp" version="3.0">
 
     <name>jSMPP</name>
+    <t>
+        jSMPP is the only comprehensive Java implementation of SMPP, the industry standard for mobile SMS messaging.
+    </t>
+
     <tags>smpp, sms, protocol, messaging, telecom, short message, java</tags>
     <website>https://jsmpp.org</website>
-    <description>
-        jSMPP is the only comprehensive Java implementation of SMPP, the industry standard for mobile SMS messaging.
-    </description>
 
     <license name="Apache License 2.0" holder="Open Telecoms Software Ltd"
              url="https://github.com/opentelecoms-org/jsmpp/blob/master/LICENSE.txt"

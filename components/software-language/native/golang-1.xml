@@ -16,24 +16,25 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLanguage group="native" artifact="golang" version="1">
+<tekSoftwareLanguage model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                     xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                     group="native" artifact="golang" version="1">
 
     <name>Go</name>
-    <tags>language, native, golang, go, programming, software development, concurrent, statically typed, compiled</tags>
-    <website>https://golang.org</website>
-    <description>
+    <t>
         Go is an open-source programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.
         It is known for its simplicity, efficiency, and strong support for concurrent programming. Go's syntax is clean
         and minimalistic, making it easy to learn and write code quickly. The language is statically typed and compiled,
         which ensures type safety and performance. Go has a rich standard library that supports various functionalities,
         including networking, file handling, and more. Its garbage collector helps manage memory automatically.
         Additionally, Go's package management system makes it straightforward to share and reuse code across projects.
-    </description>
+    </t>
 
-    <license name="BSD 3-Clause New or Revised License" holder="The Go Authors"
+    <tags>language, native, golang, go, programming, software development, concurrent, statically typed, compiled</tags>
+    <website>https://golang.org</website>
+
+    <license name="BSD 3-Clause" fullName="BSD 3-Clause New or Revised License" holder="The Go Authors"
              url="https://github.com/golang/go/blob/master/LICENSE"
-             commercialUse="true" type="PERMISSIVE"/>
-
-    <properties/>
+             commercialUse="true" type="PERMISSIVE" oss="true"/>
 
 </tekSoftwareLanguage>

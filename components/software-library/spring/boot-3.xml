@@ -16,15 +16,18 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLibrary group="spring" artifact="boot" version="3">
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="spring" artifact="boot" version="3">
 
     <name>Spring Boot</name>
-    <tags>spring, boot, framework, java, web, application, development, microservices</tags>
-    <website>https://spring.io/projects/spring-boot</website>
-    <description>
+    <t>
         Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
         It takes an opinionated view of building production-ready applications and simplifies the development process.
-    </description>
+    </t>
+
+    <tags>spring, boot, framework, java, web, application, development, microservices</tags>
+    <website>https://spring.io/projects/spring-boot</website>
 
     <license name="Apache License, Version 2.0" holder="Pivotal Software, Inc."
              url="https://www.apache.org/licenses/LICENSE-2.0"

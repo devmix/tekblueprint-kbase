@@ -16,18 +16,21 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLibrary group="spring" artifact="cloud-gateway" version="3">
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="spring" artifact="cloud-gateway" version="3">
 
     <name>Spring Cloud Gateway</name>
+    <t>
+        Spring Cloud Gateway is a library for routing to APIs and providing cross-cutting concerns to them such as:
+        security, monitoring/metrics, and resiliency. It allows you to define routes that are matched against the HTTP
+        request. The route is defined by a URI, predicates, and filters which are applied to requests.
+    </t>
+
     <tags>spring, cloud, gateway, microservices, routing, load-balancing, security, resilience, observability,
         api-gateway
     </tags>
     <website>https://spring.io/projects/spring-cloud-gateway</website>
-    <description>
-        Spring Cloud Gateway is a library for routing to APIs and providing cross-cutting concerns to them such as:
-        security, monitoring/metrics, and resiliency. It allows you to define routes that are matched against the HTTP
-        request. The route is defined by a URI, predicates, and filters which are applied to requests.
-    </description>
 
     <license name="Apache License, Version 2.0" holder="Pivotal Software, Inc."
              url="https://www.apache.org/licenses/LICENSE-2.0"

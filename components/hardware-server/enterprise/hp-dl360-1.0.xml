@@ -16,16 +16,17 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekHardwareServer group="enterprise" artifact="hp-dl360" version="1.0">
+<tekHardwareServer model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                   xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                   group="enterprise" artifact="hp-dl360" version="1.0">
 
     <name>HP :: ProLiant DL360</name>
-
-    <description>
+    <t>
         The HP ProLiant DL360 is a powerful and versatile server designed for enterprise-level performance. It is ideal
         for a wide range of applications, including virtualization, web hosting, database management, and more. The
         DL360 series offers excellent performance, reliability, and scalability, making it a popular choice among
         businesses of all sizes.
-    </description>
+    </t>
 
     <variants>
         <variant id="gen10-8sff" arch="x86">

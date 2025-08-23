@@ -15,15 +15,18 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekKnowledgeTechnology group="protocol" artifact="smpp" version="3.4">
+<tekKnowledgeTechnology model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                        xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                        group="protocol" artifact="smpp" version="3.4">
 
     <name>SMPP 3.4</name>
-    <tags>sms, smpp, protocol, messaging, telecom, short message</tags>
-    <website>https://www.smpp.org</website>
-    <description>
+    <t>
         Short Message Peer-to-Peer (SMPP) is a protocol for sending and receiving SMS messages between Short Message Service Centers (SMSCs) and external applications. It provides a way to send and
         receive SMS messages programmatically, making it suitable for bulk messaging, two-way communication, and other advanced use cases.
-    </description>
+    </t>
+
+    <tags>sms, smpp, protocol, messaging, telecom, short message</tags>
+    <website>https://www.smpp.org</website>
 
     <i18n lang="ru">
         <entry path="description">

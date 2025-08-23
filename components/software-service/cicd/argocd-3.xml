@@ -16,22 +16,24 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="cicd" artifact="argocd" version="3">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="cicd" artifact="argocd" version="3">
 
     <name>ArgoCD</name>
-    <tags>continuous-delivery, ci/cd, automation, build-server</tags>
-    <website>https://argo-cd.readthedocs.io/en/stable/</website>
-    <metrics>cpu, mem, net</metrics>
-    <description>
+    <t>
         Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. It provides automated deployments of applications to one or more clusters using the power of GitOps.
         Argo CD follows the principle of "git pull" for deployment, where the desired application state is stored in a git repository and the cluster state is continuously reconciled with this
         desired state.
-    </description>
+    </t>
+
+    <tags>continuous-delivery, ci/cd, automation, build-server</tags>
+    <website>https://argo-cd.readthedocs.io/en/stable/</website>
 
     <license name="Apache License 2.0" holder="The Argo Authors"
              url="https://github.com/argoproj/argo-cd/blob/master/LICENSE"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net</metrics>
 
 </tekSoftwareService>

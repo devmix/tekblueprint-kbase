@@ -16,21 +16,22 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwarePackage group="container" artifact="podman" version="5">
+<tekSoftwarePackage model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="container" artifact="podman" version="5">
 
     <name>Podman</name>
-    <tags>container runtime, OCI compatible, rootless containers, pod management</tags>
-    <website>https://podman.io</website>
-    <description>
+    <t>
         Podman is a daemonless container management tool that allows you to manage pods, containers, and container images.
         It provides a Docker-compatible command-line interface (CLI) but does not require a daemon to run. Podman supports
         rootless containers, which means it can be used by non-root users without requiring elevated privileges.
-    </description>
+    </t>
+
+    <tags>container runtime, OCI compatible, rootless containers, pod management</tags>
+    <website>https://podman.io</website>
 
     <license name="Apache License, Version 2.0" holder="Red Hat, Inc."
              url="https://github.com/containers/podman/blob/main/LICENSE"
              commercialUse="true" type="PERMISSIVE"/>
-
-    <properties/>
 
 </tekSoftwarePackage>

@@ -16,24 +16,28 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="message-broker" artifact="apache-kafka" version="3.9">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="message-broker" artifact="apache-kafka" version="3.9">
 
     <name>Apache Kafka</name>
-    <tags>event log, broker, queue, distributed streaming, high-throughput, fault-tolerant</tags>
-    <website>https://kafka.apache.org</website>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         Apache Kafka is an open-source distributed event-streaming platform used to build real-time data pipelines and
         streaming applications. It allows for the publication, subscription, and processing of streams of records in a
         fault-tolerant way. Kafka stores streams of events in categories called topics, where each record consists of a
         key, value, and timestamp. Producers send records to Kafka topics, while consumers read from these topics to
         process the data. Kafka ensures that messages are replicated across multiple brokers for high availability and
         durability.
-    </description>
+    </t>
+
+    <tags>event log, broker, queue, distributed streaming, high-throughput, fault-tolerant</tags>
+    <website>https://kafka.apache.org</website>
 
     <license name="Apache License, Version 2.0" holder="Apache Software Foundation"
              url="https://www.apache.org/licenses/LICENSE-2.0"
              commercialUse="true" type="PERMISSIVE"/>
+
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
 
     <properties>
         <property id="with-zk" type="BOOLEAN" defaultValue="false"/>
@@ -58,9 +62,7 @@
                 </hardware>
 
                 <endpoints>
-                    <endpoint type="topic">
-                        <cpu in="10ms" out="5ms"/>
-                        <mem in="128KiB" out="128KiB"/>
+                    <endpoint id="default" type="topic">
                         <data limitBySize="1 TiB"/>
                         <replicate type="master-master">
                             <overhead>
@@ -84,10 +86,7 @@
                 </hardware>
 
                 <endpoints>
-                    <endpoint type="topic">
-                        <cpu in="10ms" out="5ms"/>
-                        <mem in="128KiB" out="128KiB"/>
-                        <!--                        <data limitBySize="1 TiB"/>-->
+                    <endpoint id="topic" type="topic">
                         <replicate type="master-master">
                             <overhead>
                                 <data in="100b" out="100b"/>
@@ -96,10 +95,7 @@
                             </overhead>
                         </replicate>
                     </endpoint>
-                    <endpoint id="zksync" type="zksync">
-                        <cpu in="1ms" out="1ms"/>
-                        <mem in="100b" out="50b"/>>
-                    </endpoint>
+                    <endpoint id="zksync" type="zksync"/>
                 </endpoints>
             </service>
 
@@ -114,11 +110,11 @@
     <simulation>
         <streams>
             <stream id="zk-sync" from="${id}:zksync" to="${id}-zk:sync" name="Synchronize Kafka cluster">
-                <rate qty="1" per="second"/>
                 <data in="1 KiB" out="100 b"/>
                 <cpu in="10ms" out="5ms"/>
                 <mem in="128 KiB"/>
                 <latency time="1 second"/>
+                <rate qty="1" per="second"/>
             </stream>
         </streams>
 

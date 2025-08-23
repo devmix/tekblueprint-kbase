@@ -16,22 +16,24 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="orchestrator" artifact="k8s" version="1">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="orchestrator" artifact="k8s" version="1">
 
     <name>Kubernetes</name>
-    <tags>kubernetes, container orchestration, automation, deployment, scaling, management, cloud-native</tags>
-    <website>https://kubernetes.io</website>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         Kubernetes is an open-source container orchestration system that automates the deployment, scaling, and
         management of containerized applications. It groups containers into logical units for easy management and
         discovery.
-    </description>
+    </t>
+
+    <tags>kubernetes, container orchestration, automation, deployment, scaling, management, cloud-native</tags>
+    <website>https://kubernetes.io</website>
 
     <license name="Apache License 2.0" holder="CNCF"
              url="https://github.com/kubernetes/kubernetes/blob/master/LICENSE"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
 
 </tekSoftwareService>

@@ -16,22 +16,24 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="observe" artifact="grafana" version="11">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="observe" artifact="grafana" version="11">
 
     <name>Grafana</name>
-    <tags>monitoring, visualization, analytics, dashboard, time-series</tags>
-    <website>https://grafana.com</website>
-    <metrics>cpu, mem, net, data, rps</metrics>
-    <description>
+    <t>
         Grafana is an open-source platform for monitoring and observability. It allows you to query, visualize, alert
         on, and understand your metrics no matter where they are stored. Create, explore, and share dashboards with your
         team, and easily configure alert notifications for any metric or log.
-    </description>
+    </t>
+
+    <tags>monitoring, visualization, analytics, dashboard, time-series</tags>
+    <website>https://grafana.com</website>
 
     <license name="GNU Affero General Public License v3.0" holder="Grafana Labs Inc."
              url="https://github.com/grafana/grafana/blob/main/LICENSE"
              commercialUse="true" type="COPYLEFT"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps</metrics>
 
 </tekSoftwareService>

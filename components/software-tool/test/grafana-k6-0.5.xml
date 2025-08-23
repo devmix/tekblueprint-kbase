@@ -16,20 +16,21 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareTool group="test" artifact="grafana-k6" version="0.5">
+<tekSoftwareTool model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                 xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                 group="test" artifact="grafana-k6" version="0.5">
 
     <name>Grafana k6</name>
-    <tags>test, performance, load testing, grafana, performance testing, web application testing, API testing</tags>
-    <website>https://k6.io</website>
-    <description>
+    <t>
         Grafana k6 is a powerful open-source load testing tool that makes it easy to write and run performance tests for
         web applications, APIs, and other systems.
-    </description>
+    </t>
+
+    <tags>test, performance, load testing, grafana, performance testing, web application testing, API testing</tags>
+    <website>https://k6.io</website>
 
     <license name="Apache License, Version 2.0" holder="Red Hat, Inc."
              url="https://github.com/containers/podman/blob/main/LICENSE"
              commercialUse="true" type="PERMISSIVE"/>
-
-    <properties/>
 
 </tekSoftwareTool>

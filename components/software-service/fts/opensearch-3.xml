@@ -16,23 +16,25 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="fts" artifact="opensearch" version="3" >
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="fts" artifact="opensearch" version="3">
 
     <name>OpenSearch</name>
-    <tags>fts, search, opensearch</tags>
-    <website>https://opensearch.org</website>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         OpenSearch is a search engine based on the Apache Lucene library, designed to be distributed,
         RESTful, and scalable. It provides full-text search capabilities with real-time indexing and
         powerful query language. OpenSearch can handle large volumes of data across multiple nodes in a cluster.
         It supports various features such as structured search, full-text search, aggregations, and machine learning.
-    </description>
+    </t>
+
+    <tags>fts, search, opensearch</tags>
+    <website>https://opensearch.org</website>
 
     <license name="Apache License 2.0" holder="Apache Software Foundation"
              url="https://github.com/opensearch-project/OpenSearch/blob/main/LICENSE.txt"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
 
 </tekSoftwareService>

@@ -16,26 +16,28 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="san" artifact="generic" version="1.0">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="san" artifact="generic" version="1.0">
 
     <name>Storage Area Network</name>
-    <tags>san, storage, disk, persistence</tags>
-    <metrics>cpu, mem, net, data, rps, iops</metrics>
-    <description>
+    <t>
         This service provides a robust and scalable Storage Area Network (SAN) solution for high-performance data storage and retrieval.
-    </description>
+    </t>
+
+    <tags>san, storage, disk, persistence</tags>
 
     <license name="tekBlueprint License" holder="tekBlueprint"
              url="https://www.tekblueprint.org/about/licence"
              commercialUse="true" type="COPYLEFT"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps, iops</metrics>
 
     <software>
         <services>
             <service id="main" server="main">
                 <endpoints>
-                    <endpoint type="disk"/>
+                    <endpoint id="disk" type="disk"/>
                 </endpoints>
             </service>
         </services>

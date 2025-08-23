@@ -16,23 +16,25 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="balancer" artifact="nginx" version="1.28">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="balancer" artifact="nginx" version="1.28">
 
     <name>nginx</name>
-    <tags>load-balancer, web-server</tags>
-    <website>https://nginx.org</website>
-    <metrics>cpu, mem, net, data, rps</metrics>
-    <description>
+    <t>
         Nginx is a high-performance HTTP and reverse proxy server, as well as an IMAP/POP3 proxy server. It is known for
         its stability, rich feature set, simple configuration, and low resource consumption.
         Nginx is widely used for load balancing, serving static content, and as a reverse proxy to application servers.
-    </description>
+    </t>
+
+    <tags>load-balancer, web-server</tags>
+    <website>https://nginx.org</website>
 
     <license name="BSD 2-Clause Simplified License" holder="nginx.org"
              url="https://github.com/nginx/nginx/blob/master/LICENSE"
              commercialUse="true" type="COPYLEFT"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps</metrics>
 
     <software>
         <services>
@@ -44,7 +46,8 @@
                     <network bandwidth="10Mbs"/>
                 </hardware>
                 <endpoints>
-                    <endpoint type="table"/>
+                    <endpoint id="http" type="http"/>
+                    <endpoint id="https" type="https"/>
                 </endpoints>
             </service>
         </services>

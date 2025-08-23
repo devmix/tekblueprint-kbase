@@ -16,20 +16,21 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareTool group="db" artifact="pgpool" version="2">
+<tekSoftwareTool model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                 xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                 group="db" artifact="pgpool" version="2">
 
     <name>PgPool-II</name>
-    <tags>database, load balancing, failover</tags>
-    <website>http://www.pgpool.net</website>
-    <description>
+    <t>
         PgPool-II is a middleware that adds functionality to PostgreSQL database clusters.
         It provides load balancing, failover, replication, and connection pooling.
-    </description>
+    </t>
+
+    <tags>database, load balancing, failover</tags>
+    <website>http://www.pgpool.net</website>
 
     <license name="MIT License" holder=""
              url="https://github.com/ostinelli/pgpool/blob/master/LICENSE.md"
              commercialUse="true" type="PERMISSIVE"/>
-
-    <properties/>
 
 </tekSoftwareTool>

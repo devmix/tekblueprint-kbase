@@ -16,15 +16,16 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekHardwareProcessor group="enterprise" artifact="intel-xeon-e5-2697" version="1.0">
+<tekHardwareProcessor model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                      xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                      group="enterprise" artifact="intel-xeon-e5-2697" version="1.0">
 
     <name>Intel Xeon :: E5 2697</name>
-
-    <description>
+    <t>
         The Intel Xeon E5-2697 is a high-performance server processor designed for enterprise applications.
         It features advanced power management and thermal design capabilities, making it suitable for data centers
         and other demanding environments.
-    </description>
+    </t>
 
     <variants>
         <variant id="v2" arch="x86" cores="12" threads="24" freq="2.7GHz" freqMin="2.2 GHz" freqMax="3.5GHz"/>

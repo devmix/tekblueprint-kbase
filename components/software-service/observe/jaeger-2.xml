@@ -16,21 +16,23 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareService group="observe" artifact="jaeger" version="2">
+<tekSoftwareService model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="observe" artifact="jaeger" version="2">
 
     <name>Jaeger</name>
+    <t>
+        Jaeger is an open-source end-to-end distributed tracing system. It helps monitor and troubleshoot microservices-based
+        systems by providing a way to visualize the flow of requests through the system.
+    </t>
+
     <tags>tracing, observability, distributed tracing, opentracing</tags>
     <website>https://www.jaegertracing.io</website>
-    <metrics>cpu, mem, net, data, rps</metrics>
-    <description>
-       Jaeger is an open-source end-to-end distributed tracing system. It helps monitor and troubleshoot microservices-based
-        systems by providing a way to visualize the flow of requests through the system.
-    </description>
 
     <license name="Apache License 2.0" holder="Uber Technologies, Inc."
              url="https://github.com/jaegertracing/jaeger/blob/main/LICENSE"
              commercialUse="true" type="PERMISSIVE"/>
 
-    <properties/>
+    <metrics>cpu, mem, net, data, rps</metrics>
 
 </tekSoftwareService>

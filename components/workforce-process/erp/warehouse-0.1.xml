@@ -16,14 +16,17 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekWorkforceProcess group="erp" artifact="warehouse" version="0.1">
+<tekWorkforceProcess model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                     xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                     group="erp" artifact="warehouse" version="0.1">
 
     <name>ERP: Warehouse</name>
+    <t>
+        Workflow process for implementing a warehouse management system in ERP environment.
+    </t>
+
     <tags>workforce, process, erp</tags>
     <website>https://tekblueprint.org</website>
-    <description>
-        Workflow process for implementing a warehouse management system in ERP environment.
-    </description>
 
     <variant id="default">
         <parallel>

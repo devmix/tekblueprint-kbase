@@ -16,14 +16,17 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekWorkforceResource group="outsource" artifact="ui-designer" version="2025">
+<tekWorkforceResource model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                      xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                      group="outsource" artifact="ui-designer" version="2025">
 
     <name>Outsource / UI Designer (2025)</name>
+    <t>
+        This component defines the cost structure for an outsourced UI Designer role.
+    </t>
+
     <tags>workforce, resources, outsource</tags>
     <website>https://tekblueprint.org</website>
-    <description>
-        This component defines the cost structure for an outsourced UI Designer role.
-    </description>
 
     <variant id="usd" name="UI Designer">
         <grade id="regular" value="105" currency="USD" name="Regular"/>

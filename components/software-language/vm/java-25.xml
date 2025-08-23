@@ -16,21 +16,22 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<tekSoftwareLanguage group="vm" artifact="java" version="25">
+<tekSoftwareLanguage model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                     xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                     group="vm" artifact="java" version="25">
 
     <name>Java SE/EE</name>
-    <tags>language, java, jdk, jre, java-ee</tags>
-    <website>https://www.oracle.com/java/technologies/javase-jdk25-downloads.html</website>
-    <description>
+    <t>
         Java SE/EE is a comprehensive platform for developing and running enterprise-scale applications. Java 25
         introduces several new features and optimizations that enhance performance, security, and developer
         productivity.
-    </description>
+    </t>
+
+    <tags>language, java, jdk, jre, java-ee</tags>
+    <website>https://www.oracle.com/java/technologies/javase-jdk25-downloads.html</website>
 
     <license name="GNU General Public License v2, with the Classpath Exception (GPLv2+CPE)" holder="Oracle"
              url="https://openjdk.org/legal/gplv2+ce.html"
              commercialUse="true" type="COPYLEFT"/>
-
-    <properties/>
 
 </tekSoftwareLanguage>
