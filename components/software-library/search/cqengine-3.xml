@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareLibrary model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                    xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                    group="search" artifact="cqengine" version="3">
+
+    <name>CQEngine</name>
+    <t>
+        CQEngine – Collection Query Engine – is a high-performance Java collection which can be searched with SQL-like queries, with extremely low latency.
+        - Achieve millions of queries per second, with query latencies measured in microseconds
+        - Offload query traffic from databases - scale your application tier
+        - Outperform databases by a factor of thousands, even on low-end hardware
+        - Supports on-heap persistence, off-heap persistence, disk persistence, and supports MVCC transaction isolation.
+    </t>
+
+    <tags>search, db, java</tags>
+    <website>https://github.com/npgall/cqengine</website>
+    <scm>https://github.com/npgall/cqengine</scm>
+
+    <license name="Apache License, Version 2.0"
+             url="https://github.com/npgall/cqengine?tab=Apache-2.0-1-ov-file#readme"
+             commercialUse="true" type="PERMISSIVE"/>
+
+</tekSoftwareLibrary>

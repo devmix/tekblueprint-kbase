@@ -30,8 +30,45 @@
     <tags>language, java, jdk, jre, java-ee</tags>
     <website>https://www.oracle.com/java/technologies/javase-jdk25-downloads.html</website>
 
-    <license name="GNU General Public License v2, with the Classpath Exception (GPLv2+CPE)" holder="Oracle"
+    <license name="GPLv2+CPE" fullName="GNU General Public License v2, with the Classpath Exception (GPLv2+CPE)" holder="Oracle"
              url="https://openjdk.org/legal/gplv2+ce.html"
              commercialUse="true" type="COPYLEFT"/>
 
+    <!--starts: ★★★★★ | score: 0.0 - 9.0-->
+
+    <!--starts: ★★★★★ | score: 0.0 - 9.0-->
+
+    <metadata>
+        <group id="$overview">
+            <s id="release-date" value="1995"/>
+            <s id="developer" value="Sun / Oracle"/>
+            <s id="community-size" score="0.8" value="Very Large"/>
+            <s id="ecosystem-maturity" score="0.8" value="Mature"/>
+        </group>
+        <group id="features">
+            <s id="primary-purpose" value="Enterprise, Android, Backend"/>
+            <s id="key-features" value="JVM, GC, OOP"/>
+            <m id="platform" refbook="platforms:software:0.1" value="*"/>
+            <s id="integration-capabilities" score="0.7" value="Extensive (JARs, Maven)"/>
+            <s id="extensibility" score="0.8" value="High (libraries)"/>
+            <s id="realtime-capabilities" score="0.3" value="Fair (GC pauses)"/>
+            <s id="scalability-support" score="0.8" value="High"/>
+        </group>
+        <group id="technical">
+            <s id="architecture-style" value="OOP, modular"/>
+            <s id="performance" score="0.7" value="Medium-High"/>
+            <s id="memory-usage" score="0.3" value="Med-High (JVM)"/>
+            <s id="concurrency-support" value="Threads, Executors"/>
+            <s id="security-features" score="0.6" value="Good (sandbox)"/>
+            <s id="debugging-tooling" value="IntelliJ, Eclipse"/>
+        </group>
+        <group id="development">
+            <s id="learning-curve" score="0.5" value="Moderate"/>
+            <s id="documentation-quality" score="1" value="Excellent"/>
+            <s id="tutorials-examples" score="0.7" value="Abundant"/>
+            <s id="community-support" score="0.8" value="Very Large"/>
+            <s id="editor-support" score="1" value="Excellent"/>
+            <s id="development-speed" score="0.5" value="Medium"/>
+        </group>
+    </metadata>
 </tekSoftwareLanguage>

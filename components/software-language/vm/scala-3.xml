@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekSoftwareLanguage model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                     xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                     group="vm" artifact="scala" version="3">
+
+    <name>Scala</name>
+    <t>
+        Scala is a general-purpose programming language purposefully designed for the Java Virtual Machine (JVM).
+        It seamlessly integrates functional and object-oriented programming paradigms.
+    </t>
+
+    <tags>language, java, jdk, scala</tags>
+    <website>https://scala-lang.org</website>
+
+    <license name="Apache 2.0" fullName="Apache License, Version 2.0" holder="EPFL / Lightbend, Inc. dba Akka."
+             url="https://www.scala-lang.org/license/"
+             commercialUse="true" type="COPYLEFT"/>
+
+    <metadata>
+        <group id="$overview">
+            <s id="release-date" value="2003"/>
+            <s id="developer" value="EPFL / Lightbend"/>
+            <s id="community-size" score="0.5" value="Medium"/>
+            <s id="ecosystem-maturity" score="0.8" value="Mature"/>
+        </group>
+        <group id="features">
+            <s id="primary-purpose" value="Functional + OOP, Big Data"/>
+            <s id="key-features" value="Functional + OOP, Pattern Matching"/>
+            <m id="platform" refbook="platforms:software:0.1" value="linux-*|macos-*|windows-*|unix-*|plan9-*"/>
+            <s id="integration-capabilities" score="0.7" value="Akka, Spark"/>
+            <s id="extensibility" score="0.8" value="Very High (implicits)"/>
+            <s id="realtime-capabilities" score="0.3" value="Fair"/>
+            <s id="scalability-support" score="0.8" value="High"/>
+        </group>
+        <group id="technical">
+            <s id="architecture-style" value="OOP, Functional"/>
+            <s id="performance" score="0.5" value="Medium"/>
+            <s id="memory-usage" score="0.4" value="High (JVM)"/>
+            <s id="concurrency-support" value="Akka, Futures"/>
+            <s id="security-features" score="0.6" value="Good"/>
+            <s id="debugging-tooling" value="IntelliJ"/>
+        </group>
+        <group id="development">
+            <s id="learning-curve" score="0.3" value="Steep"/>
+            <s id="documentation-quality" score="0.7" value="Good"/>
+            <s id="tutorials-examples" score="0.7" value="Abundant"/>
+            <s id="community-support" score="0.5" value="Medium"/>
+            <s id="editor-support" score="0.6" value="Good"/>
+            <s id="development-speed" score="0.3" value="Slow"/>
+        </group>
+    </metadata>
+</tekSoftwareLanguage>

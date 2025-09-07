@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright (C) 2025 tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<tekKnowledgeRefBook model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                     xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                     group="platforms" artifact="software" version="0.1">
+
+    <name>Software Platforms</name>
+
+    <variant lang="en">
+        <record id="linux-ppc64le">
+            <name>Linux: PPC64LE</name>
+        </record>
+        <record id="linux-aarch64">
+            <name>Linux: ARM64</name>
+        </record>
+        <record id="linux-x86_64">
+            <name>Linux: x86-64</name>
+        </record>
+        <record id="macos-x86_64">
+            <name>macOS: x86-64</name>
+        </record>
+        <record id="macos-aarch64">
+            <name>macOS: ARM64</name>
+        </record>
+        <record id="windows-x86_64">
+            <name>Windows: x86-64</name>
+        </record>
+        <record id="windows-aarch64">
+            <name>Windows: ARM64</name>
+        </record>
+        <record id="aix-ppc64">
+            <name>AIX: PPC64</name>
+        </record>
+        <record id="linux-s390x">
+            <name>Linux: s390x</name>
+        </record>
+        <record id="aix-ppc64">
+            <name>AIX: PPC64</name>
+        </record>
+        <record id="unix-x86_64">
+            <name>Unix: x86-64</name>
+        </record>
+        <record id="unix-aarch64">
+            <name>Unix: ARM64</name>
+        </record>
+        <record id="plan9-x86_64">
+            <name>Plan 9: x86-64</name>
+        </record>
+        <record id="plan9-aarch64">
+            <name>Plan 9: ARM64</name>
+        </record>
+    </variant>
+
+</tekKnowledgeRefBook>

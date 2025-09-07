@@ -37,4 +37,38 @@
              url="https://github.com/golang/go/blob/master/LICENSE"
              commercialUse="true" type="PERMISSIVE" oss="true"/>
 
+    <metadata>
+        <group id="$overview">
+            <s id="release-date" value="2009"/>
+            <s id="developer" value="Google"/>
+            <s id="community-size" score="0.6" value="Large"/>
+            <s id="ecosystem-maturity" score="0.8" value="Mature"/>
+        </group>
+        <group id="features">
+            <s id="primary-purpose" value="Cloud, microservices, CLI"/>
+            <s id="key-features" value="Goroutines, channels, simplicity"/>
+            <m id="platform" refbook="platforms:software:0.1" value="*"/>
+            <s id="integration-capabilities" score="0.5" value="gRPC, HTTP, CLI"/>
+            <s id="extensibility" score="0.5" value="Moderate"/>
+            <s id="realtime-capabilities" score="0.6" value="Good"/>
+            <s id="scalability-support" score="0.8" value="High (goroutines)"/>
+        </group>
+        <group id="technical">
+            <s id="architecture-style" value="Concurrent, procedural"/>
+            <s id="performance" score="0.8" value="High"/>
+            <s id="memory-usage" score="0.8" value="Low-Med"/>
+            <s id="concurrency-support" value="Goroutines, CSP"/>
+            <s id="security-features" score="0.5" value="Moderate"/>
+            <s id="debugging-tooling" value="Delve, VS Code"/>
+        </group>
+        <group id="development">
+            <s id="learning-curve" score="0.8" value="Gentle"/>
+            <s id="documentation-quality" score="1" value="Excellent"/>
+            <s id="tutorials-examples" score="0.7" value="Abundant"/>
+            <s id="community-support" score="0.7" value="Large"/>
+            <s id="editor-support" score="0.7" value="Strong"/>
+            <s id="development-speed" score="0.8" value="Fast"/>
+        </group>
+    </metadata>
+
 </tekSoftwareLanguage>
