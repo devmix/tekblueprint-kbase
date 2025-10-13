@@ -37,7 +37,25 @@
         <group id="$overview">
             <s id="release-date" value="2003"/>
             <s id="developer" value="EPFL / Lightbend"/>
+            <!--
+                Community Size:
+                0 - None
+                1 - Very Small
+                3 - Small
+                5 - Medium
+                7 - Large
+                9 - Very Large
+            -->
             <s id="community-size" score="0.5" value="Medium"/>
+            <!--
+                Ecosystem Maturity:
+                0 - None
+                1 - Obsolete
+                3 - Niche
+                5 - Mature
+                7 - Enterprise
+                9 - Industry Standard
+            -->
             <s id="ecosystem-maturity" score="0.8" value="Mature"/>
         </group>
         <group id="features">

@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright (c) 2025, tekBlueprint, Sergey Grachev <sergey.grachev@yahoo.com>. All Rights Reserved
+  ~
+  ~ This source code is protected under international copyright law.  All rights
+  ~ reserved and protected by the copyright holders.
+  ~ This file is confidential and only available to authorized individuals with the
+  ~ permission of the copyright holders. If you encounter this file and do not have
+  ~ permission, please contact the copyright holders and delete this file.
+  -->
+
+<tekTemplateLib model="0.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tekblueprint.org/xml/core"
+                xsi:schemaLocation="http://www.tekblueprint.org/xml/core http://www.tekblueprint.org/xml/core-0.1.0.xsd"
+                group="core" artifact="macros" version="0.1">
+
+    <name>Core Macros Library</name>
+    <t>
+        Core macros for the tekBlueprint framework.
+        This library provides essential macros and utilities for building applications using the tekBlueprint framework.
+        This library is part of the core framework and should be included in all projects using tekBlueprint.
+    </t>
+
+    <variant id="freemarker" lang="en" include="macros-0.1.en.ftl"/>
+    <variant id="freemarker" lang="ru" include="macros-0.1.ru.ftl"/>
+
+</tekTemplateLib>
